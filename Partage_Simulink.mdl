@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2811"
+    ComputedModelVersion    "1.2813"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -43,7 +43,7 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-7.0, -7.0, 1295.0, 695.0]
+      Location		      [-8.0, -8.0, 1936.0, 1066.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
@@ -60,77 +60,20 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Array {
-	Type			"Simulink.EditorInfo"
-	Dimension		7
-	Object {
-	  $ObjectID		  5
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "57"
-	  Extents		  [1703.0, 851.0]
-	  ZoomFactor		  [0.80000000000000027]
-	  Offset		  [307.62917218009625, -1.8083333810160411]
-	}
-	Object {
-	  $ObjectID		  6
-	  IsActive		  [1]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "295"
-	  Extents		  [1669.0, 789.0]
-	  ZoomFactor		  [0.8]
-	  Offset		  [-297.20295633359672, 93.708333333333258]
-	}
-	Object {
-	  $ObjectID		  7
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "572"
-	  Extents		  [1703.0, 851.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-54.752247191011293, 100.81853735688026]
-	}
-	Object {
-	  $ObjectID		  8
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkTopLevel"
-	  LoadSaveID		  "0"
-	  Extents		  [2629.0, 1329.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [-91.200000000000045, -31.98000051975248]
-	}
-	Object {
-	  $ObjectID		  9
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "45"
-	  Extents		  [1703.0, 851.0]
-	  ZoomFactor		  [0.80000000000000027]
-	  Offset		  [0.0, 0.0]
-	}
-	Object {
-	  $ObjectID		  10
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "499"
-	  Extents		  [1709.0, 851.0]
-	  ZoomFactor		  [1.0]
-	  Offset		  [467.35231928592248, -108.46257133814592]
-	}
-	Object {
-	  $ObjectID		  11
-	  IsActive		  [0]
-	  ViewObjType		  "SimulinkSubsys"
-	  LoadSaveID		  "640"
-	  Extents		  [1709.0, 851.0]
-	  ZoomFactor		  [1.5]
-	  Offset		  [193.05833206375388, 206.68214191538982]
-	}
-	PropName		"EditorsInfo"
+      Object {
+	$PropName		"EditorsInfo"
+	$ObjectID		5
+	$ClassName		"Simulink.EditorInfo"
+	IsActive		[1]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1689.0, 885.0]
+	ZoomFactor		[1.5]
+	Offset			[84.4000000000002, -90.441664338111863]
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		12
+	$ObjectID		6
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -139,18 +82,18 @@ Model {
 	UserData		""
 	Floating		[0]
 	DockPosition		"Right"
-	Width			[426]
-	Height			[320]
+	Width			[640]
+	Height			[480]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADaPwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADrvwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAVQAAA2gAAACSAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAQAAAA64AAABjAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAPQD///8AAAa9AAADaAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAa/AAADrgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
-      "////wEAAACp/////wAAAAAAAAAA/////wEAAAEu/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAHX/////wAAAAAAAAAA/"
-      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAQy/////wAAAAAAAAAA/"
-      "////wEAAARz/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
+      "////wEAAAB5/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFT/////wAAAAAAAAAA/"
+      "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAL9/////wAAAAAAAAAA/"
+      "////wEAAAMs/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA"
     }
   }
   HideAutomaticNames	  on
@@ -158,11 +101,11 @@ Model {
   Creator		  "user"
   UpdateHistory		  "UpdateHistoryNever"
   ModifiedByFormat	  "%<Auto>"
-  LastModifiedBy	  "Beatrice Pano"
+  LastModifiedBy	  "Yishen Zhao"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Dec 04 17:22:48 2017"
-  RTWModifiedTimeStamp	  434290158
-  ModelVersionFormat	  "1.%<AutoIncrement:2811>"
+  LastModifiedDate	  "Fri Oct 12 17:08:39 2018"
+  RTWModifiedTimeStamp	  461262355
+  ModelVersionFormat	  "1.%<AutoIncrement:2813>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -212,7 +155,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    13
+    $ObjectID		    7
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "Partage_Simulink"
     Array {
@@ -256,7 +199,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      14
+      $ObjectID		      8
       Version		      "1.17.0"
       DisabledProps	      []
       Description	      ""
@@ -264,7 +207,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  15
+	  $ObjectID		  9
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -304,7 +247,7 @@ Model {
 	  SampleTimeProperty	  []
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  16
+	  $ObjectID		  10
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -345,7 +288,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  17
+	  $ObjectID		  11
 	  Version		  "1.17.0"
 	  Array {
 	    Type		    "Cell"
@@ -406,7 +349,7 @@ Model {
 	  BusAssignmentInplaceUpdate on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  18
+	  $ObjectID		  12
 	  Version		  "1.17.0"
 	  Array {
 	    Type		    "Cell"
@@ -516,7 +459,7 @@ Model {
 	  UnitDatabase		  ""
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  19
+	  $ObjectID		  13
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -564,7 +507,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  20
+	  $ObjectID		  14
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -583,7 +526,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  21
+	  $ObjectID		  15
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -613,7 +556,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  22
+	  $ObjectID		  16
 	  Version		  "1.17.0"
 	  Array {
 	    Type		    "Cell"
@@ -699,7 +642,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      23
+	      $ObjectID		      17
 	      Version		      "1.17.0"
 	      Array {
 		Type			"Cell"
@@ -787,7 +730,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      24
+	      $ObjectID		      18
 	      Version		      "1.17.0"
 	      Array {
 		Type			"Cell"
@@ -884,7 +827,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  25
+	  $ObjectID		  19
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -934,11 +877,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    14
+    $ObjectID		    8
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    26
+    $ObjectID		    20
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1258,7 +1201,7 @@ Model {
   }
   System {
     Name		    "Partage_Simulink"
-    Location		    [1913, -7, 3848, 1048]
+    Location		    [-8, -8, 1928, 1058]
     Open		    on
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  on
@@ -1271,9 +1214,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "100"
+    ZoomFactor		    "150"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "699"
+    SIDHighWatermark	    "705"
     Block {
       BlockType		      Clock
       Name		      "Clock1"
@@ -1295,7 +1238,7 @@ Model {
       Variant		      off
       System {
 	Name			"Colonne de direction"
-	Location		[-8, 0, 1370, 744]
+	Location		[-8, -8, 1928, 1058]
 	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	on
@@ -2008,8 +1951,8 @@ Model {
       Variant		      off
       System {
 	Name			"LQ-H2-Preview"
-	Location		[-8, 0, 1370, 744]
-	Open			on
+	Location		[8, 8, 1303, 703]
+	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -2159,8 +2102,8 @@ Model {
 	  Variant		  off
 	  System {
 	    Name		    "H2-Preview assist"
-	    Location		    [-8, 0, 1370, 744]
-	    Open		    on
+	    Location		    [8, 8, 1303, 703]
+	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
@@ -2631,8 +2574,8 @@ Model {
 	      Variant		      off
 	      System {
 		Name			"Subsystem"
-		Location		[-8, 0, 1370, 744]
-		Open			on
+		Location		[8, 8, 1303, 703]
+		Open			off
 		PortBlocksUseCompactNotation off
 		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
@@ -3256,7 +3199,7 @@ Model {
 		    Annotation {
 		    SID			    "543"
 		    Name		    "Q5T/8"
-		    Position		    [1154, 343, 1186, 358]
+		    Position		    [1154, 343, 1183, 357]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -3265,7 +3208,7 @@ Model {
 		    Annotation {
 		    SID			    "542"
 		    Name		    "Q6T/8"
-		    Position		    [1148, 287, 1180, 302]
+		    Position		    [1148, 287, 1177, 301]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -3274,7 +3217,7 @@ Model {
 		    Annotation {
 		    SID			    "541"
 		    Name		    "Q7T/8"
-		    Position		    [1154, 225, 1186, 240]
+		    Position		    [1154, 225, 1183, 239]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -3283,7 +3226,7 @@ Model {
 		    Annotation {
 		    SID			    "540"
 		    Name		    "Q(T)"
-		    Position		    [1154, 165, 1177, 180]
+		    Position		    [1154, 165, 1176, 179]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -3292,7 +3235,7 @@ Model {
 		    Annotation {
 		    SID			    "539"
 		    Name		    "T/24"
-		    Position		    [1316, 412, 1340, 427]
+		    Position		    [1316, 412, 1337, 426]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -3301,7 +3244,7 @@ Model {
 		    Annotation {
 		    SID			    "538"
 		    Name		    "Q0"
-		    Position		    [1152, 643, 1168, 658]
+		    Position		    [1152, 643, 1167, 657]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -3310,7 +3253,7 @@ Model {
 		    Annotation {
 		    SID			    "537"
 		    Name		    "QT/8"
-		    Position		    [1147, 588, 1173, 603]
+		    Position		    [1147, 588, 1171, 602]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -3319,7 +3262,7 @@ Model {
 		    Annotation {
 		    SID			    "536"
 		    Name		    "Q2T/8"
-		    Position		    [1154, 523, 1186, 538]
+		    Position		    [1154, 523, 1183, 537]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -3328,7 +3271,7 @@ Model {
 		    Annotation {
 		    SID			    "535"
 		    Name		    "Q3T/8"
-		    Position		    [1154, 463, 1186, 478]
+		    Position		    [1154, 463, 1183, 477]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -3337,7 +3280,7 @@ Model {
 		    Annotation {
 		    SID			    "534"
 		    Name		    "Q4T/8"
-		    Position		    [1149, 408, 1181, 423]
+		    Position		    [1149, 408, 1178, 422]
 		    InternalMargins	    [0, 0, 0, 0]
 		    FixedHeight		    off
 		    FixedWidth		    off
@@ -3403,8 +3346,8 @@ Model {
 		  Variant		  off
 		  System {
 		    Name		    "Mesure"
-		    Location		    [-8, 0, 1370, 744]
-		    Open		    on
+		    Location		    [171, 92, 1466, 787]
+		    Open		    off
 		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
@@ -3901,8 +3844,8 @@ Model {
 		  Variant		  off
 		  System {
 		    Name		    "ModèleVR"
-		    Location		    [-8, 0, 1370, 744]
-		    Open		    on
+		    Location		    [8, 8, 1303, 703]
+		    Open		    off
 		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
@@ -5860,7 +5803,7 @@ Model {
 	    Annotation {
 	      SID		      "374"
 	      Name		      "Beta"
-	      Position		      [166, 198, 190, 213]
+	      Position		      [166, 198, 188, 212]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5869,7 +5812,7 @@ Model {
 	    Annotation {
 	      SID		      "375"
 	      Name		      "r"
-	      Position		      [168, 235, 173, 250]
+	      Position		      [168, 235, 174, 249]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5878,7 +5821,7 @@ Model {
 	    Annotation {
 	      SID		      "376"
 	      Name		      "PsiL"
-	      Position		      [161, 268, 183, 283]
+	      Position		      [161, 268, 182, 282]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5887,7 +5830,7 @@ Model {
 	    Annotation {
 	      SID		      "377"
 	      Name		      "yL"
-	      Position		      [162, 304, 175, 319]
+	      Position		      [162, 304, 174, 318]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5896,7 +5839,7 @@ Model {
 	    Annotation {
 	      SID		      "378"
 	      Name		      "deltad"
-	      Position		      [167, 339, 199, 354]
+	      Position		      [167, 339, 196, 353]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5905,7 +5848,7 @@ Model {
 	    Annotation {
 	      SID		      "379"
 	      Name		      "deltadp"
-	      Position		      [163, 377, 201, 392]
+	      Position		      [163, 377, 197, 391]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5914,7 +5857,7 @@ Model {
 	    Annotation {
 	      SID		      "380"
 	      Name		      "beta"
-	      Position		      [791, 223, 814, 238]
+	      Position		      [791, 223, 812, 237]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5923,7 +5866,7 @@ Model {
 	    Annotation {
 	      SID		      "381"
 	      Name		      "r"
-	      Position		      [784, 289, 789, 304]
+	      Position		      [784, 289, 790, 303]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5932,7 +5875,7 @@ Model {
 	    Annotation {
 	      SID		      "382"
 	      Name		      "PsiL"
-	      Position		      [786, 354, 808, 369]
+	      Position		      [786, 354, 807, 368]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5941,7 +5884,7 @@ Model {
 	    Annotation {
 	      SID		      "383"
 	      Name		      "yL"
-	      Position		      [791, 411, 804, 426]
+	      Position		      [791, 411, 803, 425]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5950,7 +5893,7 @@ Model {
 	    Annotation {
 	      SID		      "384"
 	      Name		      "deltad"
-	      Position		      [781, 486, 813, 501]
+	      Position		      [781, 486, 810, 500]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5959,7 +5902,7 @@ Model {
 	    Annotation {
 	      SID		      "385"
 	      Name		      "deltadp"
-	      Position		      [788, 556, 826, 571]
+	      Position		      [788, 556, 822, 570]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5968,7 +5911,7 @@ Model {
 	    Annotation {
 	      SID		      "386"
 	      Name		      "yellow"
-	      Position		      [636, 200, 668, 215]
+	      Position		      [636, 200, 666, 214]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -5977,7 +5920,7 @@ Model {
 	    Annotation {
 	      SID		      "387"
 	      Name		      "marron"
-	      Position		      [627, 231, 662, 246]
+	      Position		      [627, 231, 660, 245]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6889,7 +6832,7 @@ Model {
 	    Annotation {
 	      SID		      "388"
 	      Name		      "Beta"
-	      Position		      [341, 48, 365, 63]
+	      Position		      [341, 48, 363, 62]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6898,7 +6841,7 @@ Model {
 	    Annotation {
 	      SID		      "389"
 	      Name		      "r"
-	      Position		      [343, 85, 348, 100]
+	      Position		      [343, 85, 349, 99]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6907,7 +6850,7 @@ Model {
 	    Annotation {
 	      SID		      "390"
 	      Name		      "PsiL"
-	      Position		      [336, 118, 358, 133]
+	      Position		      [336, 118, 357, 132]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6916,7 +6859,7 @@ Model {
 	    Annotation {
 	      SID		      "391"
 	      Name		      "yL"
-	      Position		      [337, 154, 350, 169]
+	      Position		      [337, 154, 349, 168]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6925,7 +6868,7 @@ Model {
 	    Annotation {
 	      SID		      "392"
 	      Name		      "deltad"
-	      Position		      [342, 189, 374, 204]
+	      Position		      [342, 189, 371, 203]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6934,7 +6877,7 @@ Model {
 	    Annotation {
 	      SID		      "393"
 	      Name		      "deltadp"
-	      Position		      [338, 227, 376, 242]
+	      Position		      [338, 227, 372, 241]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6943,7 +6886,7 @@ Model {
 	    Annotation {
 	      SID		      "394"
 	      Name		      "beta"
-	      Position		      [961, 73, 984, 88]
+	      Position		      [961, 73, 982, 87]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6952,7 +6895,7 @@ Model {
 	    Annotation {
 	      SID		      "395"
 	      Name		      "r"
-	      Position		      [959, 149, 964, 164]
+	      Position		      [959, 149, 965, 163]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6961,7 +6904,7 @@ Model {
 	    Annotation {
 	      SID		      "396"
 	      Name		      "PsiL"
-	      Position		      [966, 189, 988, 204]
+	      Position		      [966, 189, 987, 203]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6970,7 +6913,7 @@ Model {
 	    Annotation {
 	      SID		      "397"
 	      Name		      "yL"
-	      Position		      [966, 261, 979, 276]
+	      Position		      [966, 261, 978, 275]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6979,7 +6922,7 @@ Model {
 	    Annotation {
 	      SID		      "398"
 	      Name		      "deltad"
-	      Position		      [956, 336, 988, 351]
+	      Position		      [956, 336, 985, 350]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6988,7 +6931,7 @@ Model {
 	    Annotation {
 	      SID		      "399"
 	      Name		      "deltadp"
-	      Position		      [958, 406, 996, 421]
+	      Position		      [958, 406, 992, 420]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -6997,7 +6940,7 @@ Model {
 	    Annotation {
 	      SID		      "400"
 	      Name		      "yellow"
-	      Position		      [811, 50, 843, 65]
+	      Position		      [811, 50, 841, 64]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -7006,7 +6949,7 @@ Model {
 	    Annotation {
 	      SID		      "401"
 	      Name		      "marron"
-	      Position		      [802, 81, 837, 96]
+	      Position		      [802, 81, 835, 95]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -7015,7 +6958,7 @@ Model {
 	    Annotation {
 	      SID		      "402"
 	      Name		      "Td"
-	      Position		      [341, 659, 356, 674]
+	      Position		      [341, 659, 354, 673]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -7024,7 +6967,7 @@ Model {
 	    Annotation {
 	      SID		      "403"
 	      Name		      "x1d"
-	      Position		      [341, 593, 360, 608]
+	      Position		      [341, 593, 359, 607]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -7033,7 +6976,7 @@ Model {
 	    Annotation {
 	      SID		      "404"
 	      Name		      "x2d"
-	      Position		      [341, 625, 360, 640]
+	      Position		      [341, 625, 359, 639]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -7042,7 +6985,7 @@ Model {
 	    Annotation {
 	      SID		      "405"
 	      Name		      "x1d"
-	      Position		      [963, 541, 982, 556]
+	      Position		      [963, 541, 981, 555]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -7051,7 +6994,7 @@ Model {
 	    Annotation {
 	      SID		      "406"
 	      Name		      "x2d"
-	      Position		      [963, 616, 982, 631]
+	      Position		      [963, 616, 981, 630]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -7060,7 +7003,7 @@ Model {
 	    Annotation {
 	      SID		      "407"
 	      Name		      "Td"
-	      Position		      [965, 686, 980, 701]
+	      Position		      [965, 686, 978, 700]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -7644,7 +7587,7 @@ Model {
 	Annotation {
 	  SID			  "409"
 	  Name			  "PsiL"
-	  Position		  [473, 273, 495, 288]
+	  Position		  [473, 273, 494, 287]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -7653,7 +7596,7 @@ Model {
 	Annotation {
 	  SID			  "410"
 	  Name			  "yL"
-	  Position		  [473, 291, 486, 306]
+	  Position		  [473, 291, 485, 305]
 	  InternalMargins	  [0, 0, 0, 0]
 	  FixedHeight		  off
 	  FixedWidth		  off
@@ -8181,7 +8124,7 @@ Model {
 	    Annotation {
 	      SID		      "411"
 	      Name		      "z"
-	      Position		      [400, 92, 407, 107]
+	      Position		      [400, 92, 407, 106]
 	      InternalMargins	      [0, 0, 0, 0]
 	      FixedHeight	      off
 	      FixedWidth	      off
@@ -8771,7 +8714,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		27
+	$ObjectID		21
 	$ClassName		"Simulink.Mask"
 	Type			"Calcul des coordonnées x et y"
 	Display			"disp('Calcul des coordonnées')"
@@ -8779,8 +8722,8 @@ Model {
       }
       System {
 	Name			"Positionnement Route"
-	Location		[-7, -7, 1288, 688]
-	Open			on
+	Location		[171, 92, 1466, 787]
+	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
@@ -9548,19 +9491,58 @@ Model {
     }
     Block {
       BlockType		      Scope
+      Name		      "Scope"
+      SID		      "705"
+      Ports		      [3]
+      Position		      [585, -66, 615, -34]
+      ZOrder		      58
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','RawData','DataLogging',true),extmgr.Configuration('Visua"
+      "ls','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-15.7136','MaxYLimReal','31.60201','YLabelRea"
+      "l','','MinYLimMag','0.00000','MaxYLimMag','31.60201','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMag"
+      "Phase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorO"
+      "rder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.3921"
+      "56862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 "
+      "0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNam"
+      "es',{{}},'NumLines',3,'LineNames',{{'Positionnement Route/6','Modèle conducteur/1','Colonne de direction'}},'Sho"
+      "wContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-15.7136','MaxYLimReal','31.60201"
+      "','YLabelReal','','MinYLimMag','0.00000','MaxYLimMag','31.60201','LegendVisibility','Off','XGrid',true,'YGrid',t"
+      "rue,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803"
+      "922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.06666666666"
+      "66667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.05882352941"
+      "17647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',true,'OnceAtS"
+      "top',false),extmgr.Configuration('Tools','Measurements',true,'Version','2017a')),'Version','2017a','Position',[1"
+      " 31 1920 973])"
+      NumInputPorts	      "3"
+    }
+    Block {
+      BlockType		      Scope
       Name		      "Td (yellow), \nTa (rose), Tv=Td+Tc(blue)"
       SID		      "328"
       Ports		      [1]
       Position		      [780, 28, 895, 112]
       ZOrder		      -28
       ForegroundColor	      "blue"
-      ScopeSpecificationString "C++SS(StrPVP('Location','[740, 311, 1357, 757]'),StrPVP('Open','off'),MxPVP('AxesTitle"
-      "s',53,'struct(''axes1'',''%<SignalLabel>'')'),MxPVP('ScopeGraphics',56,'struct(''FigureColor'',''[0.5 0.5 0.5]''"
-      ",''AxesColor'',''[0 0 0]'',''AxesTickColor'',''[1 1 1]'',''LineColors'',''[1 1 0;1 0 1;0 1 1;1 0 0;0 1 0;0 0 1]'"
-      "',''LineStyles'',''-|-|-|-|-|-'',''LineWidths'',''[0.5 0.5 0.5 0.5 0.5 0.5]'',''MarkerStyles'',''none|none|none|"
-      "none|none|none'')'),StrPVP('YMin','-20'),StrPVP('YMax','15'),StrPVP('SaveToWorkspace','on'),StrPVP('SaveName','T"
-      "dTcTv'),StrPVP('DataFormat','StructureWithTime'),StrPVP('LimitDataPoints','off'),StrPVP('BlockParamSampleTime','"
-      "0'),StrPVP('Decimation','1'),StrPVP('BlockParamSampleInput','off'))"
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLogging',true,'DataLoggingVariableName','TdTcTv','DataLoggingSaveFormat','Stru"
+      "ctureWithTime','DataLoggingDecimation','1','DataLoggingDecimateData',true),extmgr.Configuration('Visuals','Time "
+      "Domain',true,'SerializedDisplays',{struct('MinYLimReal','-20','MaxYLimReal','15','YLabelReal','','MinYLimMag','0"
+      "','MaxYLimMag','10','LegendVisibility','off','XGrid',true,'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],"
+      "'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0"
+      "745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 0.831372549019608 0.0"
+      "745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039215686 0.650980392156"
+      "863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'NumLines',3,'LineNames'"
+      ",{{'sw_DR','sw_LQ','Sum1'}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','-"
+      "20','MaxYLimReal','15','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','off','XGrid',true,"
+      "'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686"
+      "274509803922],'ColorOrder',[1 1 0.0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0."
+      "16078431372549;0.392156862745098 0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.05"
+      "88235294117647 1 1;1 0.0745098039215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'"
+      "UserDefinedChannelNames',{{}},'NumLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)),extmgr.Configur"
+      "ation('Tools','Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Versi"
+      "on','2017a')),'Version','2017a','Location',[620 377 1237 823])"
       NumInputPorts	      "1"
     }
     Block {
@@ -9612,8 +9594,18 @@ Model {
       ZOrder		      5
       SrcBlock		      "Colonne de direction"
       SrcPort		      1
-      DstBlock		      "Modele véhicule"
-      DstPort		      1
+      Points		      [10, 0]
+      Branch {
+	ZOrder			356
+	Points			[0, -215]
+	DstBlock		"Scope"
+	DstPort			3
+      }
+      Branch {
+	ZOrder			315
+	DstBlock		"Modele véhicule"
+	DstPort			1
+      }
     }
     Line {
       ZOrder		      6
@@ -9627,9 +9619,19 @@ Model {
       }
       Branch {
 	ZOrder			176
-	Points			[0, 41; -318, 0; 0, -61]
-	DstBlock		"Modele véhicule"
-	DstPort			3
+	Points			[0, 41; -318, 0; 0, -29]
+	Branch {
+	  ZOrder		  357
+	  Points		  [34, 0; 0, -427]
+	  DstBlock		  "Scope"
+	  DstPort		  1
+	}
+	Branch {
+	  ZOrder		  312
+	  Points		  [0, -32]
+	  DstBlock		  "Modele véhicule"
+	  DstPort		  3
+	}
       }
     }
     Line {
@@ -9814,9 +9816,19 @@ Model {
       ZOrder		      66
       SrcBlock		      "Modèle conducteur"
       SrcPort		      1
-      Points		      [109, 0; 0, 135]
-      DstBlock		      "Colonne de direction"
-      DstPort		      2
+      Points		      [109, 0]
+      Branch {
+	ZOrder			355
+	Points			[46, 0; 0, -90]
+	DstBlock		"Scope"
+	DstPort			2
+      }
+      Branch {
+	ZOrder			310
+	Points			[0, 135]
+	DstBlock		"Colonne de direction"
+	DstPort			2
+      }
     }
     Line {
       ZOrder		      67

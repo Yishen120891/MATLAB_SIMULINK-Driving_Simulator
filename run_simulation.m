@@ -65,4 +65,6 @@ simu.theta_far = theta_far;
 simu.theta_near = theta_near;
 simu.beta = beta1;
 
+simu.RawData = RawData;
+
 
