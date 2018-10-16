@@ -60,27 +60,49 @@ K_t     = 12;               K_t_min = 0;                K_t_max = 16;
 T_N     = 0.1;
 v       = 18;
 
-InitialParameterValue = {'K_p', K_p; 'K_c', K_c; 'T_I', T_I; 'T_L', T_L; 'tau_p', tau_p; 'K_r', K_r; 'K_t', K_t; 'T_N', T_N; 'v', v};
+% InitialParameterValue = {'K_p', K_p; 'K_c', K_c; 'T_I', T_I; 'T_L', T_L; 'tau_p', tau_p; 'K_r', K_r; 'K_t', K_t; 'T_N', T_N; 'v', v};
+% OptionalArgumentsValue = { };
+% 
+% IdenModel = idgrey('funcDriverModelLoauy', InitialParameterValue, 'd', OptionalArgumentsValue, 1/fs);
+% % IdenModel = idgrey('funcDriverModelLoauy', InitialParameterValue, 'c', OptionalArgumentsValue, 0);
+%     IdenModel.Structure.Parameters(1).Minimum   = K_p_min;
+%     IdenModel.Structure.Parameters(1).Maximum   = K_p_max;
+%     IdenModel.Structure.Parameters(2).Minimum   = K_c_min;
+%     IdenModel.Structure.Parameters(2).Maximum   = K_c_max;
+%     IdenModel.Structure.Parameters(3).Minimum   = T_I_min;
+%     IdenModel.Structure.Parameters(3).Maximum   = T_I_max;
+%     IdenModel.Structure.Parameters(4).Minimum   = T_L_min;
+%     IdenModel.Structure.Parameters(4).Maximum   = T_L_max;
+%     IdenModel.Structure.Parameters(5).Minimum   = tau_p_min;
+%     IdenModel.Structure.Parameters(5).Maximum   = tau_p_max;
+%     IdenModel.Structure.Parameters(6).Minimum   = K_r_min;
+%     IdenModel.Structure.Parameters(6).Maximum   = K_r_max;
+%     IdenModel.Structure.Parameters(7).Minimum   = K_t_min;
+%     IdenModel.Structure.Parameters(7).Maximum   = K_t_max;
+%     IdenModel.Structure.Parameters(8).Free      = false;
+%     IdenModel.Structure.Parameters(9).Free      = false;
+    
+InitialParameterValue = {'K_p', K_p; 'K_c', K_c; 'T_I', T_I; 'tau_p', tau_p; 'K_r', K_r; 'K_t', K_t; 'T_N', T_N; 'v', v};
 OptionalArgumentsValue = { };
 
-IdenModel = idgrey('funcDriverModelLoauy', InitialParameterValue, 'd', OptionalArgumentsValue, 1/fs);
+IdenModel = idgrey('funcDriverModelAblamvi', InitialParameterValue, 'd', OptionalArgumentsValue, 1/fs);
 % IdenModel = idgrey('funcDriverModelLoauy', InitialParameterValue, 'c', OptionalArgumentsValue, 0);
     IdenModel.Structure.Parameters(1).Minimum   = K_p_min;
     IdenModel.Structure.Parameters(1).Maximum   = K_p_max;
     IdenModel.Structure.Parameters(2).Minimum   = K_c_min;
     IdenModel.Structure.Parameters(2).Maximum   = K_c_max;
-    IdenModel.Structure.Parameters(3).Minimum   = T_I_min;
-    IdenModel.Structure.Parameters(3).Maximum   = T_I_max;
-    IdenModel.Structure.Parameters(4).Minimum   = T_L_min;
-    IdenModel.Structure.Parameters(4).Maximum   = T_L_max;
-    IdenModel.Structure.Parameters(5).Minimum   = tau_p_min;
-    IdenModel.Structure.Parameters(5).Maximum   = tau_p_max;
-    IdenModel.Structure.Parameters(6).Minimum   = K_r_min;
-    IdenModel.Structure.Parameters(6).Maximum   = K_r_max;
-    IdenModel.Structure.Parameters(7).Minimum   = K_t_min;
-    IdenModel.Structure.Parameters(7).Maximum   = K_t_max;
+%     IdenModel.Structure.Parameters(3).Minimum   = T_I_min;
+%     IdenModel.Structure.Parameters(3).Maximum   = T_I_max;
+    IdenModel.Structure.Parameters(3).Free      = false;
+%     IdenModel.Structure.Parameters(4).Minimum   = tau_p_min;
+%     IdenModel.Structure.Parameters(4).Maximum   = tau_p_max;
+%     IdenModel.Structure.Parameters(4).Free      = false;
+%     IdenModel.Structure.Parameters(5).Minimum   = K_r_min;
+%     IdenModel.Structure.Parameters(5).Maximum   = K_r_max;
+%     IdenModel.Structure.Parameters(6).Minimum   = K_t_min;
+%     IdenModel.Structure.Parameters(6).Maximum   = K_t_max;
+    IdenModel.Structure.Parameters(7).Free      = false;
     IdenModel.Structure.Parameters(8).Free      = false;
-    IdenModel.Structure.Parameters(9).Free      = false;
 
 IdenOpt = greyestOptions;
     % Show estimation process

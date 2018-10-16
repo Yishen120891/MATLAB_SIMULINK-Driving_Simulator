@@ -1,16 +1,15 @@
-function [ A, B, C, D ] = funcDriverModelLoauy( K_p, K_c, T_I, T_L, tau_p, K_r, K_t, T_N, v, Ts )
-%FUNCDRIVERMODELLOAUY ODE function of driver model in Louay Saleh's thesis used for PEM parameter
+function [ A, B, C, D ] = funcDriverModelAblamvi( K_p, K_c, T_I, tau_p, K_r, K_t, T_N, v, Ts )
+%FUNCDRIVERMODELLOAUY ODE function of driver model in Ablamvi Ameoye's thesis used for PEM parameter
 %estimation and calculation of matrice A, B, C, D. 
 %   The driver model is described in state representation with:
 %   System inputs:      [Theta_far Theta_near delta_d Gamma_s]
 %   System outputs:     [Gamma_d]
-%   System parameters:  [K_p K_c T_I T_L tau_p K_r K_t T_N v]
+%   System parameters:  [K_p K_c T_I tau_p K_r K_t T_N v]
 % -------------------------------------------------------------------------------
 %   Inputs:
 %       K_p:        visual anticipation gain
 %       K_c:        visual compensation gain
 %       T_I:        compensation time constant (band)
-%       T_L:        compensation time constant (friction)
 %       tau_p:      processing delay   
 %       K_r:        steering column stiffness internal gain
 %       K_t:        stretch reflex gain
@@ -18,7 +17,6 @@ function [ A, B, C, D ] = funcDriverModelLoauy( K_p, K_c, T_I, T_L, tau_p, K_r, 
 %       v:          vehicle velocity
 %       Ts:         sample time
 %           
-%
 %   Outputs:
 %       [ A, B, C, D ]: system state representation matrix
 %
@@ -33,27 +31,26 @@ function [ A, B, C, D ] = funcDriverModelLoauy( K_p, K_c, T_I, T_L, tau_p, K_r, 
 %   Additional Remark from Ablamvi: retard:padé d'ordre 1
 
 %% Model
-
 a11 = -1/T_I;
 a12 = 0;
 a13 = 0;
-a21 = -2*(K_c/v)*(1/tau_p)*(T_L/T_I -1);
-a22 = -2*(1/tau_p);
+a21 = 1/tau_p;
+a22 = -1/tau_p;
 a23 = 0;
-a31 = (K_c/v)*(K_r*v+K_t)*(1/T_N)*(T_L/T_I-1);
-a32 = 2*(K_r*v+K_t)*(1/T_N);
+a31 = 0;
+a32 = (K_r*v+K_t)*(1/T_N);
 a33 = -1/T_N;
 
 b11 = 0;
-b12 = 1/T_I;
+b12 = K_c/v*(1/T_I);
 b13 = 0;
 b14 = 0;
-b21 = 2*K_p*(1/tau_p);
-b22 = 2*(K_c/v)*(1/tau_p)*(T_L/T_I);
+b21 = K_p*(1/tau_p);
+b22 = 0;
 b23 = 0;
 b24 = 0;
-b31 = -K_p*(K_r*v+K_t)*(1/T_N);
-b32 = -(K_c/v)*(K_r*v+K_t)*(1/T_N)*(T_L/T_I);
+b31 = 0;
+b32 = 0;
 b33 = -K_t*(1/T_N);
 b34 = -1/T_N;
 
@@ -65,14 +62,13 @@ B = [       b11     b12     b13     b14     ;...
             b21     b22     b23     b24     ;...
             b31     b32     b33     b34     ];
 
-% C = [               0               0               1;...
-%                     0               1               0               ];
-C = [               0               0               1               ];
+% C = [       0       0       1       ;...
+%             0       1       0       ];
+C = [       0       0       1       ];
 
-% D = [               0               0               0               0;
-%                     0               0               0               0           ];
-
-D = [               0               0               0               0];
+% D = [       0       0       0       0;
+%             0       0       0       0       ];
+D = [       0       0       0       0       ];
                 
 % Discretization
 A = eye(3) + A*Ts;
