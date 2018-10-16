@@ -66,5 +66,6 @@ simu.theta_near = theta_near;
 simu.beta = beta1;
 
 simu.RawData = RawData;
+simu.DriverModelRawData = DriverModelRawData;
 
 

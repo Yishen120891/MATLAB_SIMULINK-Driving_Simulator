@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2813"
+    ComputedModelVersion    "1.2815"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -68,8 +68,8 @@ Model {
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
 	Extents			[1689.0, 885.0]
-	ZoomFactor		[1.5]
-	Offset			[84.4000000000002, -90.441664338111863]
+	ZoomFactor		[1.25]
+	Offset			[-37.06666666666672, -96.799997258186579]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -103,9 +103,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Yishen Zhao"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Oct 12 17:08:39 2018"
-  RTWModifiedTimeStamp	  461262355
-  ModelVersionFormat	  "1.%<AutoIncrement:2813>"
+  LastModifiedDate	  "Sun Oct 14 10:47:58 2018"
+  RTWModifiedTimeStamp	  461414870
+  ModelVersionFormat	  "1.%<AutoIncrement:2815>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1214,9 +1214,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "150"
+    ZoomFactor		    "125"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "705"
+    SIDHighWatermark	    "715"
     Block {
       BlockType		      Clock
       Name		      "Clock1"
@@ -1668,6 +1668,15 @@ Model {
     }
     Block {
       BlockType		      From
+      Name		      "From"
+      SID		      "708"
+      Position		      [990, 21, 1070, 39]
+      ZOrder		      61
+      ShowName		      off
+      GotoTag		      "ro_ref"
+    }
+    Block {
+      BlockType		      From
       Name		      "From1"
       SID		      "26"
       Position		      [95, 174, 145, 186]
@@ -1767,6 +1776,33 @@ Model {
     }
     Block {
       BlockType		      From
+      Name		      "From17"
+      SID		      "709"
+      Position		      [990, 46, 1070, 64]
+      ZOrder		      62
+      ShowName		      off
+      GotoTag		      "Ts"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From18"
+      SID		      "710"
+      Position		      [990, 71, 1070, 89]
+      ZOrder		      63
+      ShowName		      off
+      GotoTag		      "deltad"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From19"
+      SID		      "711"
+      Position		      [990, 151, 1070, 169]
+      ZOrder		      64
+      ShowName		      off
+      GotoTag		      "Ts"
+    }
+    Block {
+      BlockType		      From
       Name		      "From2"
       SID		      "32"
       Position		      [95, 254, 145, 266]
@@ -1776,6 +1812,42 @@ Model {
       CloseFcn		      "tagdialog Close"
       GotoTag		      "ro_ref"
       TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From20"
+      SID		      "712"
+      Position		      [990, 186, 1070, 204]
+      ZOrder		      65
+      ShowName		      off
+      GotoTag		      "deltad"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From21"
+      SID		      "713"
+      Position		      [990, 221, 1070, 239]
+      ZOrder		      66
+      ShowName		      off
+      GotoTag		      "theta_far"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From22"
+      SID		      "714"
+      Position		      [990, 256, 1070, 274]
+      ZOrder		      67
+      ShowName		      off
+      GotoTag		      "theta_near"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From23"
+      SID		      "715"
+      Position		      [990, 291, 1070, 309]
+      ZOrder		      68
+      ShowName		      off
+      GotoTag		      "Td"
     }
     Block {
       BlockType		      From
@@ -7617,7 +7689,7 @@ Model {
       Variant		      off
       System {
 	Name			"Modèle conducteur"
-	Location		[1913, -7, 3848, 1048]
+	Location		[-8, -8, 1928, 1058]
 	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	on
@@ -9491,10 +9563,10 @@ Model {
     }
     Block {
       BlockType		      Scope
-      Name		      "Scope"
+      Name		      "Scope_BlackBoxModelIdentification_RawData"
       SID		      "705"
       Ports		      [3]
-      Position		      [585, -66, 615, -34]
+      Position		      [1110, 16, 1140, 94]
       ZOrder		      58
       ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
       "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
@@ -9515,6 +9587,31 @@ Model {
       "top',false),extmgr.Configuration('Tools','Measurements',true,'Version','2017a')),'Version','2017a','Position',[1"
       " 31 1920 973])"
       NumInputPorts	      "3"
+    }
+    Block {
+      BlockType		      Scope
+      Name		      "Scope_DriverModelIdentification_RawData"
+      SID		      "706"
+      Ports		      [5]
+      Position		      [1140, 139, 1215, 321]
+      ZOrder		      59
+      ScopeSpecificationString "Simulink.scopes.TimeScopeBlockCfg('CurrentConfiguration', extmgr.ConfigurationSet(extm"
+      "gr.Configuration('Core','General UI',true),extmgr.Configuration('Core','Source UI',true),extmgr.Configuration('S"
+      "ources','WiredSimulink',true,'DataLoggingVariableName','DriverModelRawData','DataLogging',true),extmgr.Configura"
+      "tion('Visuals','Time Domain',true,'SerializedDisplays',{struct('MinYLimReal','-10','MaxYLimReal','10','YLabelRea"
+      "l','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','Off','XGrid',true,'YGrid',true,'PlotMagPhase',false"
+      ",'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.686274509803922],'ColorOrder',[1 1 0"
+      ".0666666666666667;0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;0.392156862745098 "
+      "0.831372549019608 0.0745098039215686;0.717647058823529 0.274509803921569 1;0.0588235294117647 1 1;1 0.0745098039"
+      "215686 0.650980392156863],'Title','%<SignalLabel>','LinePropertiesCache',{{}},'UserDefinedChannelNames',{{}},'Nu"
+      "mLines',0,'LineNames',{{[]}},'ShowContent',true,'Placement',1)},'DisplayPropertyDefaults',struct('MinYLimReal','"
+      "-10','MaxYLimReal','10','YLabelReal','','MinYLimMag','0','MaxYLimMag','10','LegendVisibility','Off','XGrid',true"
+      ",'YGrid',true,'PlotMagPhase',false,'AxesColor',[0 0 0],'AxesTickColor',[0.686274509803922 0.686274509803922 0.68"
+      "6274509803922],'ColorOrder',[0.0745098039215686 0.623529411764706 1;1 0.411764705882353 0.16078431372549;1 1 0.0"
+      "666666666666667;0.717647058823529 0.274509803921569 1;0.392156862745098 0.831372549019608 0.0745098039215686;0.0"
+      "588235294117647 1 1;1 0.0745098039215686 0.650980392156863])),extmgr.Configuration('Tools','Plot Navigation',tru"
+      "e),extmgr.Configuration('Tools','Measurements',true,'Version','2017a')),'Version','2017a')"
+      NumInputPorts	      "5"
     }
     Block {
       BlockType		      Scope
@@ -9594,18 +9691,8 @@ Model {
       ZOrder		      5
       SrcBlock		      "Colonne de direction"
       SrcPort		      1
-      Points		      [10, 0]
-      Branch {
-	ZOrder			356
-	Points			[0, -215]
-	DstBlock		"Scope"
-	DstPort			3
-      }
-      Branch {
-	ZOrder			315
-	DstBlock		"Modele véhicule"
-	DstPort			1
-      }
+      DstBlock		      "Modele véhicule"
+      DstPort		      1
     }
     Line {
       ZOrder		      6
@@ -9619,19 +9706,9 @@ Model {
       }
       Branch {
 	ZOrder			176
-	Points			[0, 41; -318, 0; 0, -29]
-	Branch {
-	  ZOrder		  357
-	  Points		  [34, 0; 0, -427]
-	  DstBlock		  "Scope"
-	  DstPort		  1
-	}
-	Branch {
-	  ZOrder		  312
-	  Points		  [0, -32]
-	  DstBlock		  "Modele véhicule"
-	  DstPort		  3
-	}
+	Points			[0, 41; -318, 0; 0, -61]
+	DstBlock		"Modele véhicule"
+	DstPort			3
       }
     }
     Line {
@@ -9816,19 +9893,9 @@ Model {
       ZOrder		      66
       SrcBlock		      "Modèle conducteur"
       SrcPort		      1
-      Points		      [109, 0]
-      Branch {
-	ZOrder			355
-	Points			[46, 0; 0, -90]
-	DstBlock		"Scope"
-	DstPort			2
-      }
-      Branch {
-	ZOrder			310
-	Points			[0, 135]
-	DstBlock		"Colonne de direction"
-	DstPort			2
-      }
+      Points		      [109, 0; 0, 135]
+      DstBlock		      "Colonne de direction"
+      DstPort		      2
     }
     Line {
       ZOrder		      67
@@ -9843,6 +9910,62 @@ Model {
       SrcPort		      1
       DstBlock		      "LQ-H2-Preview"
       DstPort		      9
+    }
+    Line {
+      ZOrder		      396
+      SrcBlock		      "From"
+      SrcPort		      1
+      DstBlock		      "Scope_BlackBoxModelIdentification_RawData"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      397
+      SrcBlock		      "From17"
+      SrcPort		      1
+      DstBlock		      "Scope_BlackBoxModelIdentification_RawData"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      398
+      SrcBlock		      "From18"
+      SrcPort		      1
+      DstBlock		      "Scope_BlackBoxModelIdentification_RawData"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      399
+      SrcBlock		      "From19"
+      SrcPort		      1
+      DstBlock		      "Scope_DriverModelIdentification_RawData"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      400
+      SrcBlock		      "From20"
+      SrcPort		      1
+      DstBlock		      "Scope_DriverModelIdentification_RawData"
+      DstPort		      2
+    }
+    Line {
+      ZOrder		      401
+      SrcBlock		      "From21"
+      SrcPort		      1
+      DstBlock		      "Scope_DriverModelIdentification_RawData"
+      DstPort		      3
+    }
+    Line {
+      ZOrder		      402
+      SrcBlock		      "From22"
+      SrcPort		      1
+      DstBlock		      "Scope_DriverModelIdentification_RawData"
+      DstPort		      4
+    }
+    Line {
+      ZOrder		      403
+      SrcBlock		      "From23"
+      SrcPort		      1
+      DstBlock		      "Scope_DriverModelIdentification_RawData"
+      DstPort		      5
     }
   }
 }
