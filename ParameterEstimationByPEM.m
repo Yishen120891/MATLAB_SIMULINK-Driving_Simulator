@@ -8,23 +8,29 @@
 %                           Yishen Zhao
 %                            15/10/2018
 
-time        = simut.DriverModelRawData{1}.Values.Time;
-Gamma_s     = simut.DriverModelRawData{1}.Values.Data;
-delta_d     = simut.DriverModelRawData{2}.Values.Data;
-theta_far   = simut.DriverModelRawData{3}.Values.Data;
-theta_near  = -simut.DriverModelRawData{4}.Values.Data;
-Gamma_d 	= simut.DriverModelRawData{5}.Values.Data;
+close all;
+
+time        = simut.temps;
+theta_far   = simut.theta_far;
+theta_near  = -simut.theta_near;
+delta_d     = simut.deltad;
+Gamma_s     = simut.Ts;
+Gamma_d     = simut.Td;
 
 u_measured  = [     theta_far'      ;...
                     theta_near'     ;...
                     delta_d'        ;...
                     Gamma_s'        ];
-y_measured  = [     Gamma_d'        ]; 
+y_measured  = [     Gamma_d'        ;...
+                    delta_d'        ]; 
 
 fs = 1/(time(2)-time(1));
 
-% figure;
-% plot(time, rho, time, Gamma_d, time, delta_d);
+figure;
+plot(time, Gamma_s, time, Gamma_d);
+legend('\Gamma_s','\Gamma_d');
+figure;
+plot(time, theta_far, time, theta_near);
 
 IdenStartTime       = 20;
 IdenEndTime         = 80;
@@ -37,6 +43,7 @@ indiceValidateDataStart = find(time >= ValidateStartTime, 1);
 indiceValidateDataEnd   = find(time >= ValidateEndTime, 1);
 
 % each signal needs to be stored as column vector
+t_iden          = time(indiceIdenStartTime:indiceIdenEndTime);
 u_iden          = u_measured(:,indiceIdenStartTime:indiceIdenEndTime)';
 y_iden          = y_measured(:,indiceIdenStartTime:indiceIdenEndTime)';
 
@@ -60,11 +67,11 @@ K_t     = 12;               K_t_min = 0;                K_t_max = 16;
 T_N     = 0.1;
 v       = 18;
 
-% InitialParameterValue = {'K_p', K_p; 'K_c', K_c; 'T_I', T_I; 'T_L', T_L; 'tau_p', tau_p; 'K_r', K_r; 'K_t', K_t; 'T_N', T_N; 'v', v};
-% OptionalArgumentsValue = { };
-% 
+InitialParameterValue = {'K_p', K_p; 'K_c', K_c; 'T_I', T_I; 'T_L', T_L; 'tau_p', tau_p; 'K_r', K_r; 'K_t', K_t; 'T_N', T_N; 'v', v};
+OptionalArgumentsValue = { };
+
 % IdenModel = idgrey('funcDriverModelLoauy', InitialParameterValue, 'd', OptionalArgumentsValue, 1/fs);
-% % IdenModel = idgrey('funcDriverModelLoauy', InitialParameterValue, 'c', OptionalArgumentsValue, 0);
+IdenModel = idgrey('funcDriverModelLoauy', InitialParameterValue, 'c', OptionalArgumentsValue, 0);
 %     IdenModel.Structure.Parameters(1).Minimum   = K_p_min;
 %     IdenModel.Structure.Parameters(1).Maximum   = K_p_max;
 %     IdenModel.Structure.Parameters(2).Minimum   = K_c_min;
@@ -79,36 +86,24 @@ v       = 18;
 %     IdenModel.Structure.Parameters(6).Maximum   = K_r_max;
 %     IdenModel.Structure.Parameters(7).Minimum   = K_t_min;
 %     IdenModel.Structure.Parameters(7).Maximum   = K_t_max;
-%     IdenModel.Structure.Parameters(8).Free      = false;
-%     IdenModel.Structure.Parameters(9).Free      = false;
-    
-InitialParameterValue = {'K_p', K_p; 'K_c', K_c; 'T_I', T_I; 'tau_p', tau_p; 'K_r', K_r; 'K_t', K_t; 'T_N', T_N; 'v', v};
-OptionalArgumentsValue = { };
 
-IdenModel = idgrey('funcDriverModelAblamvi', InitialParameterValue, 'd', OptionalArgumentsValue, 1/fs);
-% IdenModel = idgrey('funcDriverModelLoauy', InitialParameterValue, 'c', OptionalArgumentsValue, 0);
-    IdenModel.Structure.Parameters(1).Minimum   = K_p_min;
-    IdenModel.Structure.Parameters(1).Maximum   = K_p_max;
-    IdenModel.Structure.Parameters(2).Minimum   = K_c_min;
-    IdenModel.Structure.Parameters(2).Maximum   = K_c_max;
-%     IdenModel.Structure.Parameters(3).Minimum   = T_I_min;
-%     IdenModel.Structure.Parameters(3).Maximum   = T_I_max;
+%     IdenModel.Structure.Parameters(1).Free      = false;
+%     IdenModel.Structure.Parameters(2).Free      = false;
     IdenModel.Structure.Parameters(3).Free      = false;
-%     IdenModel.Structure.Parameters(4).Minimum   = tau_p_min;
-%     IdenModel.Structure.Parameters(4).Maximum   = tau_p_max;
-%     IdenModel.Structure.Parameters(4).Free      = false;
-%     IdenModel.Structure.Parameters(5).Minimum   = K_r_min;
-%     IdenModel.Structure.Parameters(5).Maximum   = K_r_max;
-%     IdenModel.Structure.Parameters(6).Minimum   = K_t_min;
-%     IdenModel.Structure.Parameters(6).Maximum   = K_t_max;
-    IdenModel.Structure.Parameters(7).Free      = false;
-    IdenModel.Structure.Parameters(8).Free      = false;
-
+    IdenModel.Structure.Parameters(4).Free      = false;
+    IdenModel.Structure.Parameters(5).Free      = false;
+    IdenModel.Structure.Parameters(6).Free      = false;    
+%     IdenModel.Structure.Parameters(7).Free      = false;
+%     IdenModel.Structure.Parameters(8).Free      = false;
+    IdenModel.Structure.Parameters(9).Free      = false;
+    
 IdenOpt = greyestOptions;
     % Show estimation process
     IdenOpt.Display = 'on';
     % Disturbace model is not identified (no matrix K)
     IdenOpt.DisturbanceModel = 'none';
+    % Enforce stability
+    IdenOpt.EnforceStability = true;
     % The initial state is treated as an independent estimation parameter.
     % Not very clear with this option, found in code of Ablamvi. (by Yishen, 05/10/2018)
     IdenOpt.InitialState = 'estimate';
@@ -117,18 +112,17 @@ IdenOpt = greyestOptions;
     % Maximum number of iterations during loss-function minimization
     IdenOpt.SearchOption.MaxIter = 500;
     % Minimum percentage difference between the current value of the loss function and its expected improvement after the next iteration
-    IdenOpt.SearchOption.Tolerance = 1e-7;
+    IdenOpt.SearchOption.Tolerance = 1e-20;
     
 IdenSys = greyest(IdenData, IdenModel, IdenOpt);
 
-IdenParam = IdenSys.ParameterVector'
+IdenParam = getpvec(IdenSys, 'free')'
+IdenParamCov = getcov(IdenSys, 'value', 'free')
           
 %% Validation of result
-DriverSys = ss(IdenSys.A, IdenSys.B, IdenSys.C, IdenSys.D, 1/fs);
-% DriverSys = ss(IdenSys.A, IdenSys.B, IdenSys.C, IdenSys.D);
 
-figure;
-compare(IdenData, DriverSys);
-
-figure;
-compare(ValidateData, DriverSys);
+% figure;
+% compare(IdenData, IdenSys);
+% 
+% figure;
+% compare(ValidateData, IdenSys);

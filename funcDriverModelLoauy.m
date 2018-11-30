@@ -34,49 +34,42 @@ function [ A, B, C, D ] = funcDriverModelLoauy( K_p, K_c, T_I, T_L, tau_p, K_r, 
 
 %% Model
 
-a11 = -1/T_I;
-a12 = 0;
-a13 = 0;
-a21 = -2*(K_c/v)*(1/tau_p)*(T_L/T_I -1);
-a22 = -2*(1/tau_p);
-a23 = 0;
-a31 = (K_c/v)*(K_r*v+K_t)*(1/T_N)*(T_L/T_I-1);
-a32 = 2*(K_r*v+K_t)*(1/T_N);
-a33 = -1/T_N;
+A       = zeros(3,3);
+B       = zeros(3,4);
+C       = zeros(2,3);
+D       = zeros(2,4);
 
-b11 = 0;
-b12 = 1/T_I;
-b13 = 0;
-b14 = 0;
-b21 = 2*K_p*(1/tau_p);
-b22 = 2*(K_c/v)*(1/tau_p)*(T_L/T_I);
-b23 = 0;
-b24 = 0;
-b31 = -K_p*(K_r*v+K_t)*(1/T_N);
-b32 = -(K_c/v)*(K_r*v+K_t)*(1/T_N)*(T_L/T_I);
-b33 = -K_t*(1/T_N);
-b34 = -1/T_N;
+A(1,1)  = -1/T_I;
+A(2,1)  = -2*(K_c/v)*(1/tau_p)*(T_L/T_I -1);
+A(2,2)  = -2*(1/tau_p);
+A(3,1)  = (K_c/v)*(K_r*v+K_t)*(1/T_N)*(T_L/T_I-1);
+A(3,2)  = 2*(K_r*v+K_t)*(1/T_N);
+A(3,3)  = -1/T_N;
 
-A = [       a11     a12     a13     ;...
-            a21     a22     a23     ;...
-            a31     a32     a33     ];
+B(1,2)  = 1/T_I;
+B(2,1)  = 2*K_p*(1/tau_p);
+B(2,2)  = 2*(K_c/v)*(1/tau_p)*(T_L/T_I);
+B(3,1)  = -K_p*(K_r*v+K_t)*(1/T_N);
+B(3,2)  = -(K_c/v)*(K_r*v+K_t)*(1/T_N)*(T_L/T_I);
+B(3,3)  = -K_t*(1/T_N);
+B(3,4)  = -1/T_N;
 
-B = [       b11     b12     b13     b14     ;...
-            b21     b22     b23     b24     ;...
-            b31     b32     b33     b34     ];
+C(1,3)  = 1;
+C(2,1)  = K_c/v*(T_L/T_I-1);
+C(2,2)  = 2;
 
-% C = [               0               0               1;...
-%                     0               1               0               ];
-C = [               0               0               1               ];
+D(2,1)  = -K_p;
+D(2,2)  = -K_c/v*T_L/T_I;
 
-% D = [               0               0               0               0;
-%                     0               0               0               0           ];
+% % Discretization
+if Ts > 0
+    A       = eye(3) + A*Ts;
+    B       = B*Ts;
+end
 
-D = [               0               0               0               0];
-                
-% Discretization
-A = eye(3) + A*Ts;
-B = B*Ts;
+% P = inv(2/Ts*eye(3)-A);
+% A = (2/Ts*eye(3)+A)*P;
+% B = 2/Ts*P*B;
 
 end
 
