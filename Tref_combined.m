@@ -281,89 +281,89 @@ assignin('base','route',route);
 nom = 'Partage_Simulink';
 simut = run_simulation(route,vehicule,conducteur, nom);
 
-%% --- AFFICHAGE DES RESULTATS
-    % Tracé de la trajectoire du véhicule
-    figure (1)
-    grid on;
-    hold on;
-    plot(simut.Xv,simut.Yv,'m.');
-    plot(simut.Xv1,simut.Yv1,'k.');
-    xlabel('X position [m]');ylabel('Y position [m]'); 
-    hold off;
- 
-    % Affichage des caractéristiques principales en termes de suivi de voie
-    [M,I]=max(abs(simut.yact(1:end)));
-    disp('----------------------------------------------');
-    disp('|    Simulation - Performance indicators:    |');
-    disp(sprintf('|    max(erreur latérale) : %.2f m           |', max(abs(simut.yact(1:end)))));
-    disp(sprintf('|    max(couple) : %.2f N.m                 |',max(abs(simut.Tv))));
-    disp(sprintf('|    max(couple_conducteur) : %.2f N.m      |',max(abs(simut.Td))));
-    disp(sprintf('|    max(couple_assistance) : %.2f N.m      |',max(abs(simut.Ta))));
-    disp(sprintf('|    max(acceleration) : %.2f m/s²           |',max(abs(simut.err_acc))));
-    disp(sprintf('|    moyen(erreur latérale) : %.2f m         |',mean(abs(simut.yact))));
-    disp('----------------------------------------------');
-    
-    disp(sprintf('|    indicemax(erreur latérale) : %.2f m           |', I));
-    % Tracé de l'erreur de déplacement et du couple volant total
-    figure (2)
-    plot(simut.tmp,simut.yact,'r','LineWidth',1.5);
-    hold on;
-    plot(simut.tmp,simut.Tv,'LineWidth',1.5);
-    legend('erreur deplacement','Couple volant','Location','NorthEast')
-    xlabel('Time in seconds');
-    hold off;
- 
-    % Tracé des différents couples appliqués à la colonne de direction
-    figure (3)
-    plot(simut.temps,simut.Tv,'k','LineWidth',1.5);
-    hold on
-    plot(simut.temps,simut.Ta,'r')
-    plot(simut.temps,simut.Td,'g')
-    hold off
-    title('Torque applied on the steering column');
-    legend('Total Torque Tv','Assistance Torque','Driver Torque');
-    xlabel('Time in seconds');
-    ylabel('Torque in N.m');
-    hold off
-    
-    % Sauvegarde  du temps, erreur latéral, couples total, conducteur, assistance
-    x_tmp_drdlyass=simut.tmp;
-    y_act_drdlyass=simut.yact;
-    y_Tv_drdlyass=simut.Tv; %couple total
-    y_Td_drdlyass=simut.Td; %couple conducteur
-    y_Tc_drdlyass=simut.Ta; %couple H2 ou assistance
-%    y_fir = simut.FIR;
-    save save_drdlyass.mat x_tmp_drdlyass y_act_drdlyass y_Tv_drdlyass y_Td_drdlyass y_Tc_drdlyass% y_fir
-    
-tf=size(x_tmp_drdlyass);
-Tcoh = zeros(tf(1),1);
-Tres = zeros(tf(1),1);
-Tcont = zeros(tf(1),1);
-figure(10)
-hold on
-for i=1:tf(1)
-    if (y_Tc_drdlyass(i)*y_Td_drdlyass(i)>=0)
-        Tcoh(i) = 1;
-    end
-    if (y_Tc_drdlyass(i)*y_Td_drdlyass(i)<0)&&(y_Tc_drdlyass(i)<=y_Td_drdlyass(i))
-        Tres(i) = 1;
-    end
-    if (y_Tc_drdlyass(i)*y_Td_drdlyass(i)<0)&&(y_Tc_drdlyass(i)>y_Td_drdlyass(i))
-        Tcont(i) = 1;
-    end
-    figure(10)
-    hold on
-    plot(i,sum(Tcoh(1:i))/i,'g.');
-    plot(i,sum(Tres(1:i))/i,'b.');
-    plot(i,sum(Tcont(1:i))/i,'r.');
-end
-
+% %% --- AFFICHAGE DES RESULTATS
+%     % Tracé de la trajectoire du véhicule
+%     figure (1)
+%     grid on;
+%     hold on;
+%     plot(simut.Xv,simut.Yv,'m.');
+%     plot(simut.Xv1,simut.Yv1,'k.');
+%     xlabel('X position [m]');ylabel('Y position [m]'); 
+%     hold off;
+%  
+%     % Affichage des caractéristiques principales en termes de suivi de voie
+%     [M,I]=max(abs(simut.yact(1:end)));
+%     disp('----------------------------------------------');
+%     disp('|    Simulation - Performance indicators:    |');
+%     disp(sprintf('|    max(erreur latérale) : %.2f m           |', max(abs(simut.yact(1:end)))));
+%     disp(sprintf('|    max(couple) : %.2f N.m                 |',max(abs(simut.Tv))));
+%     disp(sprintf('|    max(couple_conducteur) : %.2f N.m      |',max(abs(simut.Td))));
+%     disp(sprintf('|    max(couple_assistance) : %.2f N.m      |',max(abs(simut.Ta))));
+%     disp(sprintf('|    max(acceleration) : %.2f m/s²           |',max(abs(simut.err_acc))));
+%     disp(sprintf('|    moyen(erreur latérale) : %.2f m         |',mean(abs(simut.yact))));
+%     disp('----------------------------------------------');
+%     
+%     disp(sprintf('|    indicemax(erreur latérale) : %.2f m           |', I));
+%     % Tracé de l'erreur de déplacement et du couple volant total
+%     figure (2)
+%     plot(simut.tmp,simut.yact,'r','LineWidth',1.5);
+%     hold on;
+%     plot(simut.tmp,simut.Tv,'LineWidth',1.5);
+%     legend('erreur deplacement','Couple volant','Location','NorthEast')
+%     xlabel('Time in seconds');
+%     hold off;
+%  
+%     % Tracé des différents couples appliqués à la colonne de direction
+%     figure (3)
+%     plot(simut.temps,simut.Tv,'k','LineWidth',1.5);
+%     hold on
+%     plot(simut.temps,simut.Ta,'r')
+%     plot(simut.temps,simut.Td,'g')
+%     hold off
+%     title('Torque applied on the steering column');
+%     legend('Total Torque Tv','Assistance Torque','Driver Torque');
+%     xlabel('Time in seconds');
+%     ylabel('Torque in N.m');
+%     hold off
+%     
+%     % Sauvegarde  du temps, erreur latéral, couples total, conducteur, assistance
+%     x_tmp_drdlyass=simut.tmp;
+%     y_act_drdlyass=simut.yact;
+%     y_Tv_drdlyass=simut.Tv; %couple total
+%     y_Td_drdlyass=simut.Td; %couple conducteur
+%     y_Tc_drdlyass=simut.Ta; %couple H2 ou assistance
+% %    y_fir = simut.FIR;
+%     save save_drdlyass.mat x_tmp_drdlyass y_act_drdlyass y_Tv_drdlyass y_Td_drdlyass y_Tc_drdlyass% y_fir
+%     
+% tf=size(x_tmp_drdlyass);
+% Tcoh = zeros(tf(1),1);
+% Tres = zeros(tf(1),1);
+% Tcont = zeros(tf(1),1);
+% figure(10)
+% hold on
+% for i=1:tf(1)
+%     if (y_Tc_drdlyass(i)*y_Td_drdlyass(i)>=0)
+%         Tcoh(i) = 1;
+%     end
+%     if (y_Tc_drdlyass(i)*y_Td_drdlyass(i)<0)&&(y_Tc_drdlyass(i)<=y_Td_drdlyass(i))
+%         Tres(i) = 1;
+%     end
+%     if (y_Tc_drdlyass(i)*y_Td_drdlyass(i)<0)&&(y_Tc_drdlyass(i)>y_Td_drdlyass(i))
+%         Tcont(i) = 1;
+%     end
+%     figure(10)
+%     hold on
+%     plot(i,sum(Tcoh(1:i))/i,'g.');
+%     plot(i,sum(Tres(1:i))/i,'b.');
+%     plot(i,sum(Tcont(1:i))/i,'r.');
+% end
+% 
 % figure(11)
 % hold on
 % plot(x_tmp_drdlyass,Tcoh,'g');
 % plot(x_tmp_drdlyass,Tres,'b');
 % plot(x_tmp_drdlyass,Tcont,'r');
-
-Tcoh_total = sum(Tcoh)/tf(1)
-Tres_total = sum(Tres)/tf(1)
-Tcont_total = sum(Tcont)/tf(1)
+% 
+% Tcoh_total = sum(Tcoh)/tf(1)
+% Tres_total = sum(Tres)/tf(1)
+% Tcont_total = sum(Tcont)/tf(1)
