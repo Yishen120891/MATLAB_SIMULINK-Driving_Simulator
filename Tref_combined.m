@@ -1,4 +1,4 @@
-clear all
+clear variables
 close all
 
 addpath('Func_road_gen_localization/');
