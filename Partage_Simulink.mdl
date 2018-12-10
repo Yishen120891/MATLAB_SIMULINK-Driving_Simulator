@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2815"
+    ComputedModelVersion    "1.2818"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -43,12 +43,12 @@ Model {
       $ObjectID		      2
       $ClassName	      "Simulink.WindowInfo"
       IsActive		      [1]
-      Location		      [-8.0, -8.0, 1936.0, 1066.0]
+      Location		      [-8.0, -8.0, 1936.0, 1096.0]
       Object {
 	$PropName		"ModelBrowserInfo"
 	$ObjectID		3
 	$ClassName		"Simulink.ModelBrowserInfo"
-	Visible			[1]
+	Visible			[0]
 	DockPosition		"Left"
 	Width			[50]
 	Height			[50]
@@ -67,9 +67,9 @@ Model {
 	IsActive		[1]
 	ViewObjType		"SimulinkTopLevel"
 	LoadSaveID		"0"
-	Extents			[1689.0, 885.0]
-	ZoomFactor		[1.25]
-	Offset			[-37.06666666666672, -96.799997258186579]
+	Extents			[1882.0, 915.0]
+	ZoomFactor		[1.5713112800275446]
+	Offset			[84.8246190668824, -57.158095671521039]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -85,11 +85,11 @@ Model {
 	Width			[640]
 	Height			[480]
       }
-      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADrvwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
+      WindowState	      "AAAA/wAAAAD9AAAAAgAAAAAAAAC9AAADzPwCAAAAA/sAAAAWAEQAbwBjAGsAVwBpAGQAZwBlAHQAMwEAAAAxAAAB+AAAA"
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
-      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQBAAAAQAAAA64AAABjAP///wAAAAEAAAAAAAAAAPwCA"
+      "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAQAAAA8wAAABjAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAa/AAADrgAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "QBjAHQAbwByAAAAAAD/////AAAAKwD///8AAAeAAAADzAAAAAEAAAACAAAAAQAAAAL8AAAAAQAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAB5/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFT/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAL9/////wAAAAAAAAAA/"
@@ -103,9 +103,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Yishen Zhao"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Sun Oct 14 10:47:58 2018"
-  RTWModifiedTimeStamp	  461414870
-  ModelVersionFormat	  "1.%<AutoIncrement:2815>"
+  LastModifiedDate	  "Mon Dec 10 11:06:36 2018"
+  RTWModifiedTimeStamp	  466340792
+  ModelVersionFormat	  "1.%<AutoIncrement:2818>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1201,10 +1201,10 @@ Model {
   }
   System {
     Name		    "Partage_Simulink"
-    Location		    [-8, -8, 1928, 1058]
+    Location		    [-8, -8, 1928, 1088]
     Open		    on
     PortBlocksUseCompactNotation off
-    ModelBrowserVisibility  on
+    ModelBrowserVisibility  off
     ModelBrowserWidth	    200
     ScreenColor		    "white"
     PaperOrientation	    "landscape"
@@ -1214,9 +1214,9 @@ Model {
     TiledPaperMargins	    [0.500000, 0.500000, 0.500000, 0.500000]
     TiledPageScale	    1
     ShowPageBoundaries	    off
-    ZoomFactor		    "125"
+    ZoomFactor		    "157"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "715"
+    SIDHighWatermark	    "720"
     Block {
       BlockType		      Clock
       Name		      "Clock1"
@@ -1241,7 +1241,7 @@ Model {
 	Location		[-8, -8, 1928, 1058]
 	Open			off
 	PortBlocksUseCompactNotation off
-	ModelBrowserVisibility	on
+	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -1674,6 +1674,7 @@ Model {
       ZOrder		      61
       ShowName		      off
       GotoTag		      "ro_ref"
+      TagVisibility	      "global"
     }
     Block {
       BlockType		      From
@@ -1782,6 +1783,7 @@ Model {
       ZOrder		      62
       ShowName		      off
       GotoTag		      "Ts"
+      TagVisibility	      "global"
     }
     Block {
       BlockType		      From
@@ -1791,6 +1793,7 @@ Model {
       ZOrder		      63
       ShowName		      off
       GotoTag		      "deltad"
+      TagVisibility	      "global"
     }
     Block {
       BlockType		      From
@@ -1800,6 +1803,7 @@ Model {
       ZOrder		      64
       ShowName		      off
       GotoTag		      "Ts"
+      TagVisibility	      "global"
     }
     Block {
       BlockType		      From
@@ -1821,6 +1825,7 @@ Model {
       ZOrder		      65
       ShowName		      off
       GotoTag		      "deltad"
+      TagVisibility	      "global"
     }
     Block {
       BlockType		      From
@@ -1830,6 +1835,7 @@ Model {
       ZOrder		      66
       ShowName		      off
       GotoTag		      "theta_far"
+      TagVisibility	      "global"
     }
     Block {
       BlockType		      From
@@ -1839,6 +1845,7 @@ Model {
       ZOrder		      67
       ShowName		      off
       GotoTag		      "theta_near"
+      TagVisibility	      "global"
     }
     Block {
       BlockType		      From
@@ -1848,6 +1855,25 @@ Model {
       ZOrder		      68
       ShowName		      off
       GotoTag		      "Td"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From24"
+      SID		      "718"
+      Position		      [330, 346, 370, 374]
+      ZOrder		      69
+      GotoTag		      "Xv"
+      TagVisibility	      "global"
+    }
+    Block {
+      BlockType		      From
+      Name		      "From25"
+      SID		      "719"
+      Position		      [330, 411, 370, 439]
+      ZOrder		      70
+      GotoTag		      "Yv"
+      TagVisibility	      "global"
     }
     Block {
       BlockType		      From
@@ -2026,7 +2052,7 @@ Model {
 	Location		[8, 8, 1303, 703]
 	Open			off
 	PortBlocksUseCompactNotation off
-	ModelBrowserVisibility	on
+	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -2177,7 +2203,7 @@ Model {
 	    Location		    [8, 8, 1303, 703]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    ModelBrowserVisibility  on
+	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -2649,7 +2675,7 @@ Model {
 		Location		[8, 8, 1303, 703]
 		Open			off
 		PortBlocksUseCompactNotation off
-		ModelBrowserVisibility	on
+		ModelBrowserVisibility	off
 		ModelBrowserWidth	200
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
@@ -2719,7 +2745,7 @@ Model {
 		    Location		    [-8, -8, 1374, 736]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
-		    ModelBrowserVisibility  on
+		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
 		    PaperOrientation	    "landscape"
@@ -3421,7 +3447,7 @@ Model {
 		    Location		    [171, 92, 1466, 787]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
-		    ModelBrowserVisibility  on
+		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
 		    PaperOrientation	    "landscape"
@@ -3919,7 +3945,7 @@ Model {
 		    Location		    [8, 8, 1303, 703]
 		    Open		    off
 		    PortBlocksUseCompactNotation off
-		    ModelBrowserVisibility  on
+		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
 		    PaperOrientation	    "landscape"
@@ -5105,7 +5131,7 @@ Model {
 	    Location		    [-8, 0, 1370, 744]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    ModelBrowserVisibility  on
+	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -6014,7 +6040,7 @@ Model {
 	    Location		    [-8, -8, 1374, 736]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    ModelBrowserVisibility  on
+	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -7318,7 +7344,7 @@ Model {
 	Location		[-8, 0, 1370, 744]
 	Open			off
 	PortBlocksUseCompactNotation off
-	ModelBrowserVisibility	on
+	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -7692,7 +7718,7 @@ Model {
 	Location		[-8, -8, 1928, 1058]
 	Open			off
 	PortBlocksUseCompactNotation off
-	ModelBrowserVisibility	on
+	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -7984,7 +8010,7 @@ Model {
 	    Location		    [0, 0, 1454, 1046]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
-	    ModelBrowserVisibility  on
+	    ModelBrowserVisibility  off
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -8794,10 +8820,10 @@ Model {
       }
       System {
 	Name			"Positionnement Route"
-	Location		[171, 92, 1466, 787]
+	Location		[-8, -8, 1928, 1088]
 	Open			off
 	PortBlocksUseCompactNotation off
-	ModelBrowserVisibility	on
+	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -8807,7 +8833,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"80"
+	ZoomFactor		"200"
 	Block {
 	  BlockType		  Inport
 	  Name			  "beta"
@@ -8848,6 +8874,24 @@ Model {
 	  BackgroundColor	  "black"
 	  ShowName		  off
 	  Outputs		  "2"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto"
+	  SID			  "716"
+	  Position		  [465, 245, 505, 275]
+	  ZOrder		  16
+	  GotoTag		  "Xv"
+	  TagVisibility		  "global"
+	}
+	Block {
+	  BlockType		  Goto
+	  Name			  "Goto1"
+	  SID			  "717"
+	  Position		  [460, 490, 500, 520]
+	  ZOrder		  17
+	  GotoTag		  "Yv"
+	  TagVisibility		  "global"
 	}
 	Block {
 	  BlockType		  Integrator
@@ -9324,8 +9368,17 @@ Model {
 	  Branch {
 	    ZOrder		    13
 	    Points		    [0, -20]
-	    DstBlock		    "x_L"
-	    DstPort		    1
+	    Branch {
+	      ZOrder		      289
+	      Points		      [0, -85]
+	      DstBlock		      "Goto"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      288
+	      DstBlock		      "x_L"
+	      DstPort		      1
+	    }
 	  }
 	}
 	Line {
@@ -9352,8 +9405,17 @@ Model {
 	  Branch {
 	    ZOrder		    55
 	    Points		    [0, 20]
-	    DstBlock		    "y_L"
-	    DstPort		    1
+	    Branch {
+	      ZOrder		      291
+	      Points		      [0, 75]
+	      DstBlock		      "Goto1"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      290
+	      DstBlock		      "y_L"
+	      DstPort		      1
+	    }
 	  }
 	}
 	Line {
@@ -9641,6 +9703,25 @@ Model {
       "ation('Tools','Plot Navigation',true,'OnceAtStop',false),extmgr.Configuration('Tools','Measurements',true,'Versi"
       "on','2017a')),'Version','2017a','Location',[620 377 1237 823])"
       NumInputPorts	      "1"
+    }
+    Block {
+      BlockType		      Reference
+      Name		      "XY Graph"
+      SID		      "720"
+      Ports		      [2]
+      Position		      [425, 365, 455, 400]
+      ZOrder		      71
+      LibraryVersion	      "1.391"
+      SourceBlock	      "simulink/Sinks/XY Graph"
+      SourceType	      "XY scope."
+      SourceProductName	      "Simulink"
+      SourceProductBaseCode   "SL"
+      ContentPreviewEnabled   off
+      xmin		      "-1200"
+      xmax		      "400"
+      ymin		      "-100"
+      ymax		      "500"
+      st		      "-1"
     }
     Block {
       BlockType		      ToWorkspace
@@ -9966,6 +10047,22 @@ Model {
       SrcPort		      1
       DstBlock		      "Scope_DriverModelIdentification_RawData"
       DstPort		      5
+    }
+    Line {
+      ZOrder		      404
+      SrcBlock		      "From24"
+      SrcPort		      1
+      Points		      [23, 0; 0, 15]
+      DstBlock		      "XY Graph"
+      DstPort		      1
+    }
+    Line {
+      ZOrder		      405
+      SrcBlock		      "From25"
+      SrcPort		      1
+      Points		      [21, 0; 0, -35]
+      DstBlock		      "XY Graph"
+      DstPort		      2
     }
   }
 }
