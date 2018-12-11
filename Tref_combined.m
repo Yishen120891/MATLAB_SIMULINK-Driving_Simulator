@@ -281,50 +281,50 @@ assignin('base','route',route);
 nom = 'Partage_Simulink';
 simut = run_simulation(route,vehicule,conducteur, nom);
 
-% %% --- AFFICHAGE DES RESULTATS
-%     % Tracé de la trajectoire du véhicule
-%     figure (1)
-%     grid on;
-%     hold on;
-%     plot(simut.Xv,simut.Yv,'m.');
-%     plot(simut.Xv1,simut.Yv1,'k.');
-%     xlabel('X position [m]');ylabel('Y position [m]'); 
-%     hold off;
-%  
-%     % Affichage des caractéristiques principales en termes de suivi de voie
-%     [M,I]=max(abs(simut.yact(1:end)));
-%     disp('----------------------------------------------');
-%     disp('|    Simulation - Performance indicators:    |');
-%     disp(sprintf('|    max(erreur latérale) : %.2f m           |', max(abs(simut.yact(1:end)))));
-%     disp(sprintf('|    max(couple) : %.2f N.m                 |',max(abs(simut.Tv))));
-%     disp(sprintf('|    max(couple_conducteur) : %.2f N.m      |',max(abs(simut.Td))));
-%     disp(sprintf('|    max(couple_assistance) : %.2f N.m      |',max(abs(simut.Ta))));
-%     disp(sprintf('|    max(acceleration) : %.2f m/s²           |',max(abs(simut.err_acc))));
-%     disp(sprintf('|    moyen(erreur latérale) : %.2f m         |',mean(abs(simut.yact))));
-%     disp('----------------------------------------------');
-%     
-%     disp(sprintf('|    indicemax(erreur latérale) : %.2f m           |', I));
-%     % Tracé de l'erreur de déplacement et du couple volant total
-%     figure (2)
-%     plot(simut.tmp,simut.yact,'r','LineWidth',1.5);
-%     hold on;
-%     plot(simut.tmp,simut.Tv,'LineWidth',1.5);
-%     legend('erreur deplacement','Couple volant','Location','NorthEast')
-%     xlabel('Time in seconds');
-%     hold off;
-%  
-%     % Tracé des différents couples appliqués à la colonne de direction
-%     figure (3)
-%     plot(simut.temps,simut.Tv,'k','LineWidth',1.5);
-%     hold on
-%     plot(simut.temps,simut.Ta,'r')
-%     plot(simut.temps,simut.Td,'g')
-%     hold off
-%     title('Torque applied on the steering column');
-%     legend('Total Torque Tv','Assistance Torque','Driver Torque');
-%     xlabel('Time in seconds');
-%     ylabel('Torque in N.m');
-%     hold off
+%% --- AFFICHAGE DES RESULTATS
+    % Tracé de la trajectoire du véhicule
+    figure (1)
+    grid on;
+    hold on;
+    plot(simut.Xv,simut.Yv,'m.');
+    plot(simut.Xv1,simut.Yv1,'k.');
+    xlabel('X position [m]');ylabel('Y position [m]'); 
+    hold off;
+ 
+    % Affichage des caractéristiques principales en termes de suivi de voie
+    [M,I]=max(abs(simut.yact(1:end)));
+    disp('----------------------------------------------');
+    disp('|    Simulation - Performance indicators:    |');
+    disp(sprintf('|    max(erreur latérale) : %.2f m           |', max(abs(simut.yact(1:end)))));
+    disp(sprintf('|    max(couple) : %.2f N.m                 |',max(abs(simut.Tv))));
+    disp(sprintf('|    max(couple_conducteur) : %.2f N.m      |',max(abs(simut.Td))));
+    disp(sprintf('|    max(couple_assistance) : %.2f N.m      |',max(abs(simut.Ta))));
+    disp(sprintf('|    max(acceleration) : %.2f m/s²           |',max(abs(simut.err_acc))));
+    disp(sprintf('|    moyen(erreur latérale) : %.2f m         |',mean(abs(simut.yact))));
+    disp('----------------------------------------------');
+    
+    disp(sprintf('|    indicemax(erreur latérale) : %.2f m           |', I));
+    % Tracé de l'erreur de déplacement et du couple volant total
+    figure (2)
+    plot(simut.tmp,simut.yact,'r','LineWidth',1.5);
+    hold on;
+    plot(simut.tmp,simut.Tv,'LineWidth',1.5);
+    legend('erreur deplacement','Couple volant','Location','NorthEast')
+    xlabel('Time in seconds');
+    hold off;
+ 
+    % Tracé des différents couples appliqués à la colonne de direction
+    figure (3)
+    plot(simut.temps,simut.Tv,'k','LineWidth',1.5);
+    hold on
+    plot(simut.temps,simut.Ta,'r')
+    plot(simut.temps,simut.Td,'g')
+    hold off
+    title('Torque applied on the steering column');
+    legend('Total Torque Tv','Assistance Torque','Driver Torque');
+    xlabel('Time in seconds');
+    ylabel('Torque in N.m');
+    hold off
 %     
 %     % Sauvegarde  du temps, erreur latéral, couples total, conducteur, assistance
 %     x_tmp_drdlyass=simut.tmp;
