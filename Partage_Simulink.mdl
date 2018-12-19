@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2818"
+    ComputedModelVersion    "1.2820"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -65,11 +65,11 @@ Model {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkTopLevel"
-	LoadSaveID		"0"
+	ViewObjType		"SimulinkSubsys"
+	LoadSaveID		"244"
 	Extents			[1882.0, 915.0]
-	ZoomFactor		[1.5713112800275446]
-	Offset			[84.8246190668824, -57.158095671521039]
+	ZoomFactor		[1.19]
+	Offset			[0.0, 0.0]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -103,9 +103,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Yishen Zhao"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Mon Dec 10 11:06:36 2018"
-  RTWModifiedTimeStamp	  466340792
-  ModelVersionFormat	  "1.%<AutoIncrement:2818>"
+  LastModifiedDate	  "Tue Dec 18 12:21:47 2018"
+  RTWModifiedTimeStamp	  467036500
+  ModelVersionFormat	  "1.%<AutoIncrement:2820>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -1202,7 +1202,7 @@ Model {
   System {
     Name		    "Partage_Simulink"
     Location		    [-8, -8, 1928, 1088]
-    Open		    on
+    Open		    off
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1216,7 +1216,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "157"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "720"
+    SIDHighWatermark	    "721"
     Block {
       BlockType		      Clock
       Name		      "Clock1"
@@ -1238,7 +1238,7 @@ Model {
       Variant		      off
       System {
 	Name			"Colonne de direction"
-	Location		[-8, -8, 1928, 1058]
+	Location		[-8, -8, 1928, 1088]
 	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
@@ -7341,7 +7341,7 @@ Model {
       Variant		      off
       System {
 	Name			"Modele véhicule"
-	Location		[-8, 0, 1370, 744]
+	Location		[-8, -8, 1928, 1088]
 	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
@@ -7715,8 +7715,8 @@ Model {
       Variant		      off
       System {
 	Name			"Modèle conducteur"
-	Location		[-8, -8, 1928, 1058]
-	Open			off
+	Location		[-8, -8, 1928, 1088]
+	Open			on
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -7728,7 +7728,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"98"
+	ZoomFactor		"119"
 	Block {
 	  BlockType		  Inport
 	  Name			  "theta_near"
@@ -8364,6 +8364,19 @@ Model {
 	  ShowName		  off
 	}
 	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace"
+	  SID			  "721"
+	  Ports			  [1]
+	  Position		  [560, 300, 620, 330]
+	  ZOrder		  3
+	  VariableName		  "delta_SW"
+	  MaxDataPoints		  "inf"
+	  Save2DSignal		  "2-D array (concatenate along first dimension)"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
 	  BlockType		  TransportDelay
 	  Name			  "Transport\nDelay2"
 	  SID			  "291"
@@ -8459,6 +8472,12 @@ Model {
 	  SrcBlock		  "Transport\nDelay2"
 	  SrcPort		  1
 	  Points		  [25, 0]
+	  Branch {
+	    ZOrder		    89
+	    Points		    [0, 80]
+	    DstBlock		    "To Workspace"
+	    DstPort		    1
+	  }
 	  Branch {
 	    ZOrder		    53
 	    Points		    [0, -155]

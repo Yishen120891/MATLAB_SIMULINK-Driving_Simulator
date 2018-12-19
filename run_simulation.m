@@ -64,8 +64,7 @@ simu.tmp = tmp;
 simu.theta_far = theta_far;
 simu.theta_near = theta_near;
 simu.beta = beta1;
+simu.delta_SW = delta_SW;
 
 simu.RawData = RawData;
 simu.DriverModelRawData = DriverModelRawData;
-
-
