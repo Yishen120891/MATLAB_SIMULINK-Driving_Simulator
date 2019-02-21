@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2820"
+    ComputedModelVersion    "1.2830"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -60,20 +60,59 @@ Model {
 	$ClassName		"Simulink.ExplorerBarInfo"
 	Visible			[1]
       }
-      Object {
-	$PropName		"EditorsInfo"
-	$ObjectID		5
-	$ClassName		"Simulink.EditorInfo"
-	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"244"
-	Extents			[1882.0, 915.0]
-	ZoomFactor		[1.19]
-	Offset			[0.0, 0.0]
+      Array {
+	Type			"Simulink.EditorInfo"
+	Dimension		5
+	Object {
+	  $ObjectID		  5
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkTopLevel"
+	  LoadSaveID		  "0"
+	  Extents		  [1882.0, 912.0]
+	  ZoomFactor		  [1.57]
+	  Offset		  [1.1368683772161603e-13, 0.0]
+	}
+	Object {
+	  $ObjectID		  6
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "224"
+	  Extents		  [1882.0, 912.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  7
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "45"
+	  Extents		  [1882.0, 912.0]
+	  ZoomFactor		  [0.8]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  8
+	  IsActive		  [0]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "572"
+	  Extents		  [1882.0, 912.0]
+	  ZoomFactor		  [1.0]
+	  Offset		  [0.0, 0.0]
+	}
+	Object {
+	  $ObjectID		  9
+	  IsActive		  [1]
+	  ViewObjType		  "SimulinkSubsys"
+	  LoadSaveID		  "295"
+	  Extents		  [1882.0, 912.0]
+	  ZoomFactor		  [1.25]
+	  Offset		  [-391.04761904761915, 42.995238095237937]
+	}
+	PropName		"EditorsInfo"
       }
       Object {
 	$PropName		"DockComponentsInfo"
-	$ObjectID		6
+	$ObjectID		10
 	$ClassName		"Simulink.DockComponentInfo"
 	Type			"GLUE2:PropertyInspector"
 	ID			"Property Inspector"
@@ -103,9 +142,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Yishen Zhao"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Tue Dec 18 12:21:47 2018"
-  RTWModifiedTimeStamp	  467036500
-  ModelVersionFormat	  "1.%<AutoIncrement:2820>"
+  LastModifiedDate	  "Thu Jan 10 13:23:43 2019"
+  RTWModifiedTimeStamp	  469027420
+  ModelVersionFormat	  "1.%<AutoIncrement:2830>"
   ConfigurationManager	  "none"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
@@ -155,7 +194,7 @@ Model {
   TryForcingSFcnDF	  off
   Object {
     $PropName		    "DataLoggingOverride"
-    $ObjectID		    7
+    $ObjectID		    11
     $ClassName		    "Simulink.SimulationData.ModelLoggingInfo"
     model_		    "Partage_Simulink"
     Array {
@@ -199,7 +238,7 @@ Model {
     Type		    "Handle"
     Dimension		    1
     Simulink.ConfigSet {
-      $ObjectID		      8
+      $ObjectID		      12
       Version		      "1.17.0"
       DisabledProps	      []
       Description	      ""
@@ -207,7 +246,7 @@ Model {
 	Type			"Handle"
 	Dimension		9
 	Simulink.SolverCC {
-	  $ObjectID		  9
+	  $ObjectID		  13
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -247,7 +286,7 @@ Model {
 	  SampleTimeProperty	  []
 	}
 	Simulink.DataIOCC {
-	  $ObjectID		  10
+	  $ObjectID		  14
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -288,7 +327,7 @@ Model {
 	  LoggingIntervals	  "[-inf, inf]"
 	}
 	Simulink.OptimizationCC {
-	  $ObjectID		  11
+	  $ObjectID		  15
 	  Version		  "1.17.0"
 	  Array {
 	    Type		    "Cell"
@@ -349,7 +388,7 @@ Model {
 	  BusAssignmentInplaceUpdate on
 	}
 	Simulink.DebuggingCC {
-	  $ObjectID		  12
+	  $ObjectID		  16
 	  Version		  "1.17.0"
 	  Array {
 	    Type		    "Cell"
@@ -459,7 +498,7 @@ Model {
 	  UnitDatabase		  ""
 	}
 	Simulink.HardwareCC {
-	  $ObjectID		  13
+	  $ObjectID		  17
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -507,7 +546,7 @@ Model {
 	  UseSimulinkCoderFeatures on
 	}
 	Simulink.ModelReferenceCC {
-	  $ObjectID		  14
+	  $ObjectID		  18
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -526,7 +565,7 @@ Model {
 	  SupportModelReferenceSimTargetCustomCode off
 	}
 	Simulink.SFSimCC {
-	  $ObjectID		  15
+	  $ObjectID		  19
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  ""
@@ -556,7 +595,7 @@ Model {
 	}
 	Simulink.RTWCC {
 	  $BackupClass		  "Simulink.RTWCC"
-	  $ObjectID		  16
+	  $ObjectID		  20
 	  Version		  "1.17.0"
 	  Array {
 	    Type		    "Cell"
@@ -642,7 +681,7 @@ Model {
 	    Type		    "Handle"
 	    Dimension		    2
 	    Simulink.CodeAppCC {
-	      $ObjectID		      17
+	      $ObjectID		      21
 	      Version		      "1.17.0"
 	      Array {
 		Type			"Cell"
@@ -730,7 +769,7 @@ Model {
 	    }
 	    Simulink.GRTTargetCC {
 	      $BackupClass	      "Simulink.TargetCC"
-	      $ObjectID		      18
+	      $ObjectID		      22
 	      Version		      "1.17.0"
 	      Array {
 		Type			"Cell"
@@ -827,7 +866,7 @@ Model {
 	  }
 	}
 	SlCovCC.ConfigComp {
-	  $ObjectID		  19
+	  $ObjectID		  23
 	  Version		  "1.17.0"
 	  DisabledProps		  []
 	  Description		  "Simulink Coverage Configuration Component"
@@ -877,11 +916,11 @@ Model {
   }
   Simulink.ConfigSet {
     $PropName		    "ActiveConfigurationSet"
-    $ObjectID		    8
+    $ObjectID		    12
   }
   Object {
     $PropName		    "DataTransfer"
-    $ObjectID		    20
+    $ObjectID		    24
     $ClassName		    "Simulink.GlobalDataTransfer"
     DefaultTransitionBetweenSyncTasks "Ensure deterministic transfer (maximum delay)"
     DefaultTransitionBetweenAsyncTasks "Ensure data integrity only"
@@ -1202,7 +1241,7 @@ Model {
   System {
     Name		    "Partage_Simulink"
     Location		    [-8, -8, 1928, 1088]
-    Open		    off
+    Open		    on
     PortBlocksUseCompactNotation off
     ModelBrowserVisibility  off
     ModelBrowserWidth	    200
@@ -1216,7 +1255,7 @@ Model {
     ShowPageBoundaries	    off
     ZoomFactor		    "157"
     ReportName		    "simulink-default.rpt"
-    SIDHighWatermark	    "721"
+    SIDHighWatermark	    "727"
     Block {
       BlockType		      Clock
       Name		      "Clock1"
@@ -2049,8 +2088,8 @@ Model {
       Variant		      off
       System {
 	Name			"LQ-H2-Preview"
-	Location		[8, 8, 1303, 703]
-	Open			off
+	Location		[-8, -8, 1928, 1088]
+	Open			on
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -3444,8 +3483,8 @@ Model {
 		  Variant		  off
 		  System {
 		    Name		    "Mesure"
-		    Location		    [171, 92, 1466, 787]
-		    Open		    off
+		    Location		    [-8, -8, 1928, 1088]
+		    Open		    on
 		    PortBlocksUseCompactNotation off
 		    ModelBrowserVisibility  off
 		    ModelBrowserWidth	    200
@@ -7342,7 +7381,7 @@ Model {
       System {
 	Name			"Modele véhicule"
 	Location		[-8, -8, 1928, 1088]
-	Open			off
+	Open			on
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -7716,7 +7755,7 @@ Model {
       System {
 	Name			"Modèle conducteur"
 	Location		[-8, -8, 1928, 1088]
-	Open			on
+	Open			off
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -8001,13 +8040,13 @@ Model {
 	  Name			  "Observateur Driver\nz à ordre reduit"
 	  SID			  "269"
 	  Ports			  [2, 2]
-	  Position		  [515, 631, 615, 684]
+	  Position		  [520, 631, 620, 684]
 	  ZOrder		  -25
 	  RequestExecContextInheritance	off
 	  Variant		  off
 	  System {
 	    Name		    "Observateur Driver\nz à ordre reduit"
-	    Location		    [0, 0, 1454, 1046]
+	    Location		    [-8, -8, 1928, 1088]
 	    Open		    off
 	    PortBlocksUseCompactNotation off
 	    ModelBrowserVisibility  off
@@ -8377,6 +8416,32 @@ Model {
 	  SampleTime		  "-1"
 	}
 	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace1"
+	  SID			  "722"
+	  Ports			  [1]
+	  Position		  [710, 300, 770, 330]
+	  ZOrder		  4
+	  VariableName		  "TsTd"
+	  MaxDataPoints		  "inf"
+	  Save2DSignal		  "2-D array (concatenate along first dimension)"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "To Workspace2"
+	  SID			  "723"
+	  Ports			  [1]
+	  Position		  [470, 340, 530, 370]
+	  ZOrder		  5
+	  VariableName		  "delta_SW_before_delay"
+	  MaxDataPoints		  "inf"
+	  Save2DSignal		  "2-D array (concatenate along first dimension)"
+	  FixptAsFi		  on
+	  SampleTime		  "-1"
+	}
+	Block {
 	  BlockType		  TransportDelay
 	  Name			  "Transport\nDelay2"
 	  SID			  "291"
@@ -8464,8 +8529,17 @@ Model {
 	  ZOrder		  9
 	  SrcBlock		  "Sum10"
 	  SrcPort		  1
-	  DstBlock		  "Transport\nDelay2"
-	  DstPort		  1
+	  Points		  [5, 0]
+	  Branch {
+	    ZOrder		    155
+	    DstBlock		    "To Workspace2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    154
+	    DstBlock		    "Transport\nDelay2"
+	    DstPort		    1
+	  }
 	}
 	Line {
 	  ZOrder		  10
@@ -8551,8 +8625,18 @@ Model {
 	  ZOrder		  21
 	  SrcBlock		  "Sum6"
 	  SrcPort		  1
-	  DstBlock		  "Sum1"
-	  DstPort		  2
+	  Points		  [11, 0]
+	  Branch {
+	    ZOrder		    127
+	    Points		    [0, 80]
+	    DstBlock		    "To Workspace1"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    126
+	    DstBlock		    "Sum1"
+	    DstPort		    2
+	  }
 	}
 	Line {
 	  ZOrder		  22
@@ -8610,7 +8694,7 @@ Model {
 	  ZOrder		  29
 	  SrcBlock		  "Observateur Driver\nz à ordre reduit"
 	  SrcPort		  2
-	  Points		  [5, 0]
+	  Points		  [0, 0]
 	  Branch {
 	    ZOrder		    30
 	    DstBlock		    "Demux2"
@@ -8831,7 +8915,7 @@ Model {
       Variant		      off
       Object {
 	$PropName		"MaskObject"
-	$ObjectID		21
+	$ObjectID		25
 	$ClassName		"Simulink.Mask"
 	Type			"Calcul des coordonnées x et y"
 	Display			"disp('Calcul des coordonnées')"
@@ -8840,7 +8924,7 @@ Model {
       System {
 	Name			"Positionnement Route"
 	Location		[-8, -8, 1928, 1088]
-	Open			off
+	Open			on
 	PortBlocksUseCompactNotation off
 	ModelBrowserVisibility	off
 	ModelBrowserWidth	200
@@ -8852,7 +8936,7 @@ Model {
 	TiledPaperMargins	[0.500000, 0.500000, 0.500000, 0.500000]
 	TiledPageScale		1
 	ShowPageBoundaries	off
-	ZoomFactor		"200"
+	ZoomFactor		"125"
 	Block {
 	  BlockType		  Inport
 	  Name			  "beta"
@@ -9126,7 +9210,7 @@ Model {
 	  Name			  "s_dist3"
 	  SID			  "316"
 	  Ports			  [1]
-	  Position		  [715, 444, 775, 466]
+	  Position		  [715, 449, 775, 471]
 	  ZOrder		  -21
 	  ForegroundColor	  "gray"
 	  ShowName		  off
@@ -9187,6 +9271,32 @@ Model {
 	  SampleTime		  "-1"
 	}
 	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "s_dist8"
+	  SID			  "726"
+	  Ports			  [1]
+	  Position		  [730, 89, 765, 111]
+	  ZOrder		  20
+	  ForegroundColor	  "gray"
+	  ShowName		  off
+	  VariableName		  "ro_previewed"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "-1"
+	}
+	Block {
+	  BlockType		  ToWorkspace
+	  Name			  "s_dist9"
+	  SID			  "727"
+	  Ports			  [1]
+	  Position		  [710, 649, 770, 671]
+	  ZOrder		  21
+	  ForegroundColor	  "gray"
+	  ShowName		  off
+	  VariableName		  "theta_far_raw"
+	  MaxDataPoints		  "inf"
+	  SampleTime		  "-1"
+	}
+	Block {
 	  BlockType		  MATLABFcn
 	  Name			  "vitesse dans repère absolu"
 	  SID			  "319"
@@ -9214,7 +9324,7 @@ Model {
 	  Name			  "x_L1"
 	  SID			  "429"
 	  Ports			  [1]
-	  Position		  [360, 341, 395, 359]
+	  Position		  [360, 286, 395, 304]
 	  ZOrder		  2
 	  ForegroundColor	  "gray"
 	  ShowName		  off
@@ -9240,7 +9350,7 @@ Model {
 	  Name			  "y_L1"
 	  SID			  "430"
 	  Ports			  [1]
-	  Position		  [360, 421, 395, 439]
+	  Position		  [360, 481, 395, 499]
 	  ZOrder		  1
 	  ForegroundColor	  "gray"
 	  ShowName		  off
@@ -9452,23 +9562,6 @@ Model {
 	  DstPort		  1
 	}
 	Line {
-	  ZOrder		  21
-	  SrcBlock		  "Demux1"
-	  SrcPort		  1
-	  Points		  [7, 0]
-	  Branch {
-	    ZOrder		    239
-	    DstBlock		    "ro_previewed"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    187
-	    Points		    [0, 25]
-	    DstBlock		    "Mux3"
-	    DstPort		    1
-	  }
-	}
-	Line {
 	  ZOrder		  22
 	  SrcBlock		  "Demux1"
 	  SrcPort		  2
@@ -9512,7 +9605,6 @@ Model {
 	  Points		  [8, 0]
 	  Branch {
 	    ZOrder		    269
-	    Points		    [0, -5]
 	    DstBlock		    "s_dist3"
 	    DstPort		    1
 	  }
@@ -9539,13 +9631,6 @@ Model {
 	    DstBlock		    "theta_near"
 	    DstPort		    1
 	  }
-	}
-	Line {
-	  ZOrder		  36
-	  SrcBlock		  "Demux1"
-	  SrcPort		  7
-	  DstBlock		  "Transfer Fcn"
-	  DstPort		  1
 	}
 	Line {
 	  ZOrder		  37
@@ -9582,23 +9667,6 @@ Model {
 	  }
 	}
 	Line {
-	  ZOrder		  43
-	  SrcBlock		  "Transfer Fcn"
-	  SrcPort		  1
-	  Points		  [13, 0]
-	  Branch {
-	    ZOrder		    234
-	    Points		    [0, 40]
-	    DstBlock		    "s_dist2"
-	    DstPort		    1
-	  }
-	  Branch {
-	    ZOrder		    205
-	    DstBlock		    "theta_far"
-	    DstPort		    1
-	  }
-	}
-	Line {
 	  ZOrder		  92
 	  SrcBlock		  "Mux3"
 	  SrcPort		  1
@@ -9619,6 +9687,67 @@ Model {
 	  Branch {
 	    ZOrder		    230
 	    DstBlock		    "Mux1"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  21
+	  SrcBlock		  "Demux1"
+	  SrcPort		  1
+	  Points		  [7, 0]
+	  Branch {
+	    ZOrder		    239
+	    Points		    [12, 0]
+	    Branch {
+	      ZOrder		      336
+	      Points		      [0, -40]
+	      DstBlock		      "s_dist8"
+	      DstPort		      1
+	    }
+	    Branch {
+	      ZOrder		      335
+	      DstBlock		      "ro_previewed"
+	      DstPort		      1
+	    }
+	  }
+	  Branch {
+	    ZOrder		    187
+	    Points		    [0, 25]
+	    DstBlock		    "Mux3"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  356
+	  SrcBlock		  "Transfer Fcn"
+	  SrcPort		  1
+	  Points		  [7, 0]
+	  Branch {
+	    ZOrder		    358
+	    Points		    [0, 40]
+	    DstBlock		    "s_dist2"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    357
+	    DstBlock		    "theta_far"
+	    DstPort		    1
+	  }
+	}
+	Line {
+	  ZOrder		  355
+	  SrcBlock		  "Demux1"
+	  SrcPort		  7
+	  Points		  [13, 0]
+	  Branch {
+	    ZOrder		    363
+	    DstBlock		    "Transfer Fcn"
+	    DstPort		    1
+	  }
+	  Branch {
+	    ZOrder		    362
+	    Points		    [0, 40]
+	    DstBlock		    "s_dist9"
 	    DstPort		    1
 	  }
 	}
