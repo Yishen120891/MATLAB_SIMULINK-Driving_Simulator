@@ -74,3 +74,5 @@ simu.DriverModelRawData = DriverModelRawData;
 simu.TsTd = TsTd;
 simu.delta_SW_before_delay = delta_SW_before_delay;
 simu.ro_previewed = ro_previewed;
+simu.T_alpha = T_alpha;
+simu.T_gamma = T_gamma;
