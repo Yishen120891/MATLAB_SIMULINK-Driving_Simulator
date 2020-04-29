@@ -191,7 +191,60 @@ case 1
         EPHI0 = 0;
         route.EX0 = 0;
         route.EY0 = 0;
-    
+        
+    case 5
+        mat_file_path = '../SCANeR_matData/RL/Exp2_NoFog-No_Assistance';
+        % Initialize a raw data adapter
+        raw_data = MATDataAdapter(mat_file_path, 1);
+        % Select data with speed > v_x_min and half of whole data
+        v_x_min = 17;
+        data = raw_data.select_indices((raw_data.speed_x >= v_x_min) & (raw_data.time <= max(raw_data.time)/2));
+        
+        road_center_x = data.road_center_x;
+        road_center_x_pre = [road_center_x(1);road_center_x(1:end-1)];
+        road_center_y = data.road_center_y;
+        road_center_y_pre = [road_center_y(1);road_center_y(1:end-1)];
+        diff = vecnorm([road_center_x - road_center_x_pre road_center_y - road_center_y_pre]');
+        S = cumsum(diff);
+        [S, indice] = unique(S);
+
+%         road_center_x = road_center_x(indice);
+%         road_center_y = road_center_y(indice);
+%         vehicle_rear_axle_x = data.vehicle_rear_axle_center_x(indice);
+%         vehicle_rear_axle_y = data.vehicle_rear_axle_center_y(indice);
+%         vehicle_heading     = data.heading_rad(indice);
+        
+        route.step = 0.05;
+        EPHI0=data.heading_rad(200); 
+        route.EX0=data.vehicle_rear_axle_center_x(200);
+        route.EY0=data.vehicle_rear_axle_center_y(200);
+        route.largeur = 3.5;
+        
+        x2 = 0:0.05:S(end);
+        ro_ref0 = interp1(S,data.road_curvature(indice),x2,'spline');
+        road_angle = interp1(S, data.road_angle_rad(indice), x2, 'spline');
+        centrex = interp1(S, data.road_center_x(indice), x2, 'spline');
+        centrey = interp1(S, data.road_center_y(indice), x2, 'spline');
+               
+        route.rayon = -1./ro_ref0';
+%         route = creeRouteRayonDeCourbure( route.rayon, route.step, route.EX0, route.EY0, EPHI0, route.largeur);
+        route.courbure = ro_ref0';
+        route.alpha = road_angle';
+        
+%         route.centrex = centrex';
+%         route.centrey = centrey';
+%         route.voieGx = route.centrex - route.largeur/2*sin(route.alpha);
+%         route.voieGy = route.centrey + route.largeur/2*cos(route.alpha);
+%         route.voieDx = route.centrex + route.largeur/2*sin(route.alpha);
+%         route.voieDy = route.centrey - route.largeur/2*cos(route.alpha);
+
+        route.voieGx = centrex';
+        route.voieGy = centrey';
+        route.centrex = route.voieGx + route.largeur/2*sin(route.alpha);
+        route.centrey = route.voieGy - route.largeur/2*cos(route.alpha);
+        route.voieDx =  route.voieGx + route.largeur*sin(route.alpha);
+        route.voieDy = route.voieGy - route.largeur*cos(route.alpha);
+       
     otherwise
     disp(' ');
     disp('Piste inconnue !!!');   
