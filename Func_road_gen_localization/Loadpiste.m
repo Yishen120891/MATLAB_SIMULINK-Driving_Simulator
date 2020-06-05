@@ -193,7 +193,7 @@ case 1
         route.EY0 = 0;
         
     case 5
-        mat_file_path = '../SCANeR_matData/RL/Exp2_NoFog-No_Assistance';
+        mat_file_path = 'external_data_Yishen/Exp2_NoFog-No_Assistance';
         % Initialize a raw data adapter
         raw_data = MATDataAdapter(mat_file_path, 1);
         % Select data with speed > v_x_min and half of whole data

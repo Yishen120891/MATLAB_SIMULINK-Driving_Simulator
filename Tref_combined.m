@@ -4,9 +4,9 @@ close all
 addpath('Func_road_gen_localization/');
 addpath('Design_controllers/');
 
-load('../SCANeR_Simulink/SharedControlAssistance/Transition_26032019.mat');
+load('external_data_Yishen/Transition_26032019.mat');
 
-raw_data = MATDataAdapter('../SCANeR_matData/RL/Exp2_NoFog-Assistance.mat', 1);
+raw_data = MATDataAdapter('external_data_Yishen/Exp2_NoFog-No_Assistance.mat', 1);
 % Select data with speed > v_x_min and half of whole data
 v_x_min = 17;
 data = raw_data.select_indices((raw_data.speed_x >= v_x_min) & (raw_data.time <= max(raw_data.time)/2));

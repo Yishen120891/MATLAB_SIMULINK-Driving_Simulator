@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2843"
+    ComputedModelVersion    "1.2846"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -87,11 +87,11 @@ Model {
 	$ObjectID		5
 	$ClassName		"Simulink.EditorInfo"
 	IsActive		[1]
-	ViewObjType		"SimulinkSubsys"
-	LoadSaveID		"572"
-	Extents			[1882.0, 886.0]
-	ZoomFactor		[1.0]
-	Offset			[-163.00000000000011, 182.58333333333326]
+	ViewObjType		"SimulinkTopLevel"
+	LoadSaveID		"0"
+	Extents			[1820.0, 886.0]
+	ZoomFactor		[1.25]
+	Offset			[-43.6796875, -128.39999999999998]
       }
       Object {
 	$PropName		"DockComponentsInfo"
@@ -112,9 +112,9 @@ Model {
       "AAAAAAA+wAAABYARABvAGMAawBXAGkAZABnAGUAdAA0AAAAAAD/////AAAAAAAAAAD7AAAAUgBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0Ac"
       "ABvAG4AZQBuAHQALwBHAEwAVQBFADIAIAB0AHIAZQBlACAAYwBvAG0AcABvAG4AZQBuAHQAAAAAAP////8AAABjAP///wAAAAEAAAAAAAAAAPwCA"
       "AAAAfsAAABUAEcATABVAEUAMgA6AFAAcgBvAHAAZQByAHQAeQBJAG4AcwBwAGUAYwB0AG8AcgAvAFAAcgBvAHAAZQByAHQAeQAgAEkAbgBzAHAAZ"
-      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAdiAAADrgAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
+      "QBjAHQAbwByAAAAAAD/////AAABrAD///8AAAdCAAADrgAAAAEAAAACAAAAAQAAAAL8AAAABAAAAAAAAAABAAAANgBjAG8AbABsAGEAcABzAGkAY"
       "gBsAGUAUABhAG4AZQBsAFQAbwBvAGwAQgBhAHIATABlAGYAdAMAAAAA/////wAAAAAAAAAAAAAAAQAAAAEAAAA4AGMAbwBsAGwAYQBwAHMAaQBiA"
-      "GwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQCAAAAAP////8AAAAAAAAAAAAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
+      "GwAZQBQAGEAbgBlAGwAVABvAG8AbABCAGEAcgBSAGkAZwBoAHQDAAAAAP////8AAAAAAAAAAAAAAAIAAAAP/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/"
       "////wEAAAB5/////wAAAAAAAAAA/////wEAAADa/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAFT/////wAAAAAAAAAA/"
       "////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wAAAAAA/////wAAAAAAAAAA/////wEAAAMr/////wAAAAAAAAAA/"
@@ -129,9 +129,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Yishen Zhao"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Wed Apr 29 11:05:59 2020"
-  RTWModifiedTimeStamp	  510059154
-  ModelVersionFormat	  "1.%<AutoIncrement:2843>"
+  LastModifiedDate	  "Fri Jun 05 14:44:31 2020"
+  RTWModifiedTimeStamp	  513267653
+  ModelVersionFormat	  "1.%<AutoIncrement:2846>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -1294,11 +1294,11 @@ Model {
   System {
     Name		    "Partage_Simulink"
     Location		    [-8, -8, 1928, 1058]
-    Open		    off
+    Open		    on
     PortBlocksUseCompactNotation off
     SetExecutionDomain	    off
     ExecutionDomainType	    "Deduce"
-    ModelBrowserVisibility  off
+    ModelBrowserVisibility  on
     ModelBrowserWidth	    200
     ScreenColor		    "white"
     PaperOrientation	    "landscape"
@@ -1337,7 +1337,7 @@ Model {
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
-	ModelBrowserVisibility	off
+	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -2150,7 +2150,7 @@ Model {
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
-	ModelBrowserVisibility	off
+	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -2303,7 +2303,7 @@ Model {
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
 	    ExecutionDomainType	    "Deduce"
-	    ModelBrowserVisibility  off
+	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -2785,7 +2785,7 @@ Model {
 		PortBlocksUseCompactNotation off
 		SetExecutionDomain	off
 		ExecutionDomainType	"Deduce"
-		ModelBrowserVisibility	off
+		ModelBrowserVisibility	on
 		ModelBrowserWidth	200
 		ScreenColor		"white"
 		PaperOrientation	"landscape"
@@ -2869,7 +2869,7 @@ Model {
 		    PortBlocksUseCompactNotation off
 		    SetExecutionDomain	    off
 		    ExecutionDomainType	    "Deduce"
-		    ModelBrowserVisibility  off
+		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
 		    PaperOrientation	    "landscape"
@@ -3549,11 +3549,11 @@ Model {
 		  System {
 		    Name		    "Mesure"
 		    Location		    [-8, -8, 1928, 1058]
-		    Open		    on
+		    Open		    off
 		    PortBlocksUseCompactNotation off
 		    SetExecutionDomain	    off
 		    ExecutionDomainType	    "Deduce"
-		    ModelBrowserVisibility  off
+		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
 		    PaperOrientation	    "landscape"
@@ -4049,7 +4049,7 @@ Model {
 		    PortBlocksUseCompactNotation off
 		    SetExecutionDomain	    off
 		    ExecutionDomainType	    "Deduce"
-		    ModelBrowserVisibility  off
+		    ModelBrowserVisibility  on
 		    ModelBrowserWidth	    200
 		    ScreenColor		    "white"
 		    PaperOrientation	    "landscape"
@@ -5179,7 +5179,7 @@ Model {
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
 	    ExecutionDomainType	    "Deduce"
-	    ModelBrowserVisibility  off
+	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -6069,7 +6069,7 @@ Model {
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
 	    ExecutionDomainType	    "Deduce"
-	    ModelBrowserVisibility  off
+	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -7403,7 +7403,7 @@ Model {
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
-	ModelBrowserVisibility	off
+	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -7775,7 +7775,7 @@ Model {
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
-	ModelBrowserVisibility	off
+	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
@@ -7975,7 +7975,7 @@ Model {
 	  Position		  [565, 213, 625, 257]
 	  ZOrder		  -15
 	  ShowName		  off
-	  Gain			  "0.215*v"
+	  Gain			  "0.214*v"
 	}
 	Block {
 	  BlockType		  Gain
@@ -8081,7 +8081,7 @@ Model {
 	    PortBlocksUseCompactNotation off
 	    SetExecutionDomain	    off
 	    ExecutionDomainType	    "Deduce"
-	    ModelBrowserVisibility  off
+	    ModelBrowserVisibility  on
 	    ModelBrowserWidth	    200
 	    ScreenColor		    "white"
 	    PaperOrientation	    "landscape"
@@ -9028,7 +9028,7 @@ Model {
 	PortBlocksUseCompactNotation off
 	SetExecutionDomain	off
 	ExecutionDomainType	"Deduce"
-	ModelBrowserVisibility	off
+	ModelBrowserVisibility	on
 	ModelBrowserWidth	200
 	ScreenColor		"white"
 	PaperOrientation	"landscape"
