@@ -195,7 +195,7 @@ case 1
     case 5
         mat_file_path = 'external_data_Yishen/Exp2_NoFog-No_Assistance';
         % Initialize a raw data adapter
-        raw_data = MATDataAdapter(mat_file_path, 1);
+        raw_data = MATDataAdapter(mat_file_path);
         % Select data with speed > v_x_min and half of whole data
         v_x_min = 17;
         data = raw_data.select_indices((raw_data.speed_x >= v_x_min) & (raw_data.time <= max(raw_data.time)/2));

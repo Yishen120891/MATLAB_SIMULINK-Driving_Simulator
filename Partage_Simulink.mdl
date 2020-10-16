@@ -6,7 +6,7 @@ Model {
     NumRootInports	    0
     NumRootOutports	    0
     ParameterArgumentNames  ""
-    ComputedModelVersion    "1.2846"
+    ComputedModelVersion    "1.2850"
     NumModelReferences	    0
     NumTestPointedSignals   0
     NumProvidedFunctions    0
@@ -129,9 +129,9 @@ Model {
   ModifiedByFormat	  "%<Auto>"
   LastModifiedBy	  "Yishen Zhao"
   ModifiedDateFormat	  "%<Auto>"
-  LastModifiedDate	  "Fri Jun 05 14:44:31 2020"
-  RTWModifiedTimeStamp	  513267653
-  ModelVersionFormat	  "1.%<AutoIncrement:2846>"
+  LastModifiedDate	  "Fri Oct 16 11:29:28 2020"
+  RTWModifiedTimeStamp	  524748562
+  ModelVersionFormat	  "1.%<AutoIncrement:2850>"
   SampleTimeColors	  off
   SampleTimeAnnotations	  off
   LibraryLinkDisplay	  "none"
@@ -7975,7 +7975,7 @@ Model {
 	  Position		  [565, 213, 625, 257]
 	  ZOrder		  -15
 	  ShowName		  off
-	  Gain			  "0.214*v"
+	  Gain			  "0.28*v"
 	}
 	Block {
 	  BlockType		  Gain
@@ -9991,10 +9991,10 @@ Model {
       SourceProductName	      "Simulink"
       SourceProductBaseCode   "SL"
       ContentPreviewEnabled   off
-      xmin		      "-1000"
-      xmax		      "800"
-      ymin		      "-400"
-      ymax		      "1200"
+      xmin		      "-1200"
+      xmax		      "400"
+      ymin		      "-200"
+      ymax		      "500"
       st		      "-1"
     }
     Block {

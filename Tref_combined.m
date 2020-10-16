@@ -6,15 +6,15 @@ addpath('Design_controllers/');
 
 load('external_data_Yishen/Transition_26032019.mat');
 
-raw_data = MATDataAdapter('external_data_Yishen/Exp2_NoFog-No_Assistance.mat', 1);
+% raw_data = MATDataAdapter('external_data_Yishen/Exp2_NoFog-No_Assistance.mat');
 % Select data with speed > v_x_min and half of whole data
-v_x_min = 17;
-data = raw_data.select_indices((raw_data.speed_x >= v_x_min) & (raw_data.time <= max(raw_data.time)/2));
+% v_x_min = 17;
+% data = raw_data.select_indices((raw_data.speed_x >= v_x_min) & (raw_data.time <= max(raw_data.time)/2));
 
 %% --- INITIALIZATION ROAD, VEHICLE AND DRIVER MODELS
 global stp EX0 EY0 EPHI0 route ind_route Smax
 % Choix de la route : 1 (piste_LIVIC.mat), 2(test-script), 3(Scaner_piste.mat), 4(straight line)
-pst = 5;
+pst = 1;
 ind_route=1;                    % Initialization of the road index
 [EPHI0,route]= Loadpiste(pst);
 stp=route.step;
@@ -315,8 +315,8 @@ simut = run_simulation(route,vehicule,conducteur, nom);
     grid on;
     hold on;
     plot(simut.Xv,simut.Yv,'m.');
-%     plot(simut.Xv1,simut.Yv1,'k.');
-    plot(data.vehicle_rear_axle_center_x, data.vehicle_rear_axle_center_y, 'k.');
+    plot(simut.Xv1,simut.Yv1,'k.');
+%     plot(data.vehicle_rear_axle_center_x, data.vehicle_rear_axle_center_y, 'k.');
     xlabel('X position [m]');ylabel('Y position [m]'); 
     hold off;
  
